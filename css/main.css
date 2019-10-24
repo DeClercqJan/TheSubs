@@ -10,4 +10,31 @@ body {
   background-color: #bcb4bc;
 }
 
+nav {
+  background-color: #dcd4dc;
+}
+
+header {
+  border-bottom: 1px solid lightgray;
+}
+
+.icon-nav {
+  width: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  width: 100vw;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 60px;
+}
+
 /*# sourceMappingURL=main.css.map */
