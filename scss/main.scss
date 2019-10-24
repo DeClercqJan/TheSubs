@@ -1,4 +1,5 @@
 @import 'variable';
+@import "_past_events.scss";
 
 * {
     margin: 0;
@@ -11,3 +12,4 @@
 body {
     background-color: $silver;
 }
+
