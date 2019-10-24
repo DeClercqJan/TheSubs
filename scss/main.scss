@@ -1,5 +1,9 @@
 @import 'variable';
+<<<<<<< HEAD
 @import "_past_events.scss";
+=======
+@import 'album';
+>>>>>>> b1281950e3068bb860522256529e5d591a96d247
 
 * {
     margin: 0;
@@ -13,3 +17,54 @@ body {
     background-color: $silver;
 }
 
+<<<<<<< HEAD
+=======
+nav {
+    background-color: $thristle;
+}
+header{
+    border-bottom: 1px solid lightgray;
+}
+
+.icon-nav {
+    width: 40px;
+}
+.album {
+    @include album;
+}
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 100vw;
+    
+  }
+  .img-wrapper {
+      display: flex;
+      justify-content: center;
+  }
+  button {
+    width: 60px;
+  }
+  
+a {
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.collapse {
+    height: calc(100vh - 60px);
+}
+>>>>>>> b1281950e3068bb860522256529e5d591a96d247
