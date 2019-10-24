@@ -27,6 +27,47 @@
     }
     p{
       margin: auto;
+      color: $secondary-text;
     }
+    a{
+      color: $primary-text;
+    }
+    a:hover{
+      font-weight: bold;
+    }
+  }
+body {
+    background-color: $silver;
+}
+
+nav {
+    background-color: $thristle;
+}
+header{
+    border-bottom: 1px solid lightgray;
+}
+
+.icon-nav {
+    width: 40px;
+}
+.album {
+    @include album;
+}
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 100vw;
     
   }
+  .img-wrapper {
+      display: flex;
+      justify-content: center;
+  }
+  button{
+
+      width: 60px;
+     
+  }
+  

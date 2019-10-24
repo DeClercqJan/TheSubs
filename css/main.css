@@ -32,5 +32,51 @@ footer #footer-logo img {
 
 footer p {
   margin: auto;
+  color: darkgray;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  font-weight: bold;
+}
+
+body {
+  background-color: #bcb4bc;
+}
+
+nav {
+  background-color: #dcd4dc;
+}
+
+header {
+  border-bottom: 1px solid lightgray;
+}
+
+.icon-nav {
+  width: 40px;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[3];
+      grid-template-columns: repeat(3, 2fr);
+  width: 100vw;
+}
+
+.img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  width: 60px;
 }
 /*# sourceMappingURL=main.css.map */
