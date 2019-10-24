@@ -42,3 +42,22 @@ header{
     width: 60px;
   }
   
+a {
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.collapse {
+    height: calc(100vh - 60px);
+}
