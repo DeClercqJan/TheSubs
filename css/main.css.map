@@ -1,1 +1,13 @@
-{"version":3,"sourceRoot":"","sources":["../scss/main.scss","../scss/_variable.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EACA;;;AAGJ;EACI,kBCLK","file":"main.css"}
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,OAAO;EACpB,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,MAAM,CAAA;EACJ,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,uBAAuB;EAC9C,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;EAClB,gBAAgB,EAAE,0CAAyC;CAU5D;;AAjBD,AASC,MATK,CASL,YAAY,CAAC,GAAG,CAAA;EACb,UAAU,EAAE,OAAO;EACnB,UAAU,EAAE,IAAI;CACjB;;AAZH,AAaE,MAbI,CAaJ,CAAC,CAAA;EACC,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/_variable.scss",
+        "../scss/_album.scss",
+        "../scss/_contact.scss",
+        "../scss/_about.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

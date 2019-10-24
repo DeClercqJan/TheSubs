@@ -2,7 +2,6 @@
 @import 'album';
 @import 'contact';
 @import 'about';
-@import 'home';
 
 
 * {
@@ -13,8 +12,21 @@
     box-sizing: border-box;
   }
 
-body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-}
+  footer{
+    max-height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient($silver, $white, $silver);
+
+   #footer-logo img{
+      object-fit: contain;
+      max-height: 50px;
+    }
+    p{
+      margin: auto;
+    }
+    
+  }

@@ -3,11 +3,34 @@
   padding: 0;
   font-size: 1em;
   font-family: inherit;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body {
-  background-color: #bcb4bc;
+footer {
+  max-height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bcb4bc), color-stop(#fbfbfb), to(#bcb4bc));
+  background-image: linear-gradient(#bcb4bc, #fbfbfb, #bcb4bc);
 }
 
+footer #footer-logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 50px;
+}
+
+footer p {
+  margin: auto;
+}
 /*# sourceMappingURL=main.css.map */
