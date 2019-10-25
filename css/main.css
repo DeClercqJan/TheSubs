@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,10 @@
 
 nav {
   background-color: #dcd4dc;
+}
+nav .img-wrapper span {
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
 }
 
 header {
