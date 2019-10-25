@@ -19,11 +19,11 @@ header {
   border-bottom: 1px solid lightgray;
 }
 
-.icon-nav {
+header .icon-nav {
   width: 40px;
 }
 
-.wrapper {
+header .wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (2fr)[3];
@@ -31,7 +31,7 @@ header {
   width: 100vw;
 }
 
-.img-wrapper {
+header .img-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,50 +40,11 @@ header {
           justify-content: center;
 }
 
-button {
+header button {
   width: 60px;
 }
 
-footer {
-  max-height: 50px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 3fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 3fr 1fr;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: #fbfbfb;
-}
-
-footer #footer-logo img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-height: 50px;
-}
-
-footer #footer-social-border {
-  border: red 1px dotted;
-}
-
-footer p {
-  margin: auto;
-  color: white;
-}
-
-footer a {
-  color: black;
-}
-
-footer a:hover {
-  font-weight: bold;
-}
-/*# sourceMappingURL=main.css.map */
-a {
+header a {
   text-decoration: none;
   border: 1px solid gray;
   padding: 10px;
@@ -93,10 +54,140 @@ a {
   margin-bottom: 20px;
 }
 
-.menu {
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+footer {
+  max-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  background-color: #bcb4bc;
+}
+
+footer #footer-logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 45px;
+}
+
+footer #footer-social-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  max-width: 400px;
+}
+
+footer #footer-social-border i {
+  padding: 5px;
+}
+
+footer #footer-social-border i:hover {
+  color: #f70deb;
+}
+
+footer p {
+  margin: auto 0;
+  color: white;
+}
+
+footer a {
+  color: black;
+  padding: 10px;
+}
+
+footer a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f70deb;
+}
+
+.index {
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.index .carousel .carousel-inner {
+  height: 85vh;
+  background-color: #ababab;
+}
+
+.index .carousel .carousel-inner .carousel-item, .index .carousel .carousel-inner .carousel-item img {
+  height: 100%;
+}
+
+.index .carousel .carousel-inner .carousel-item .carousel-caption p, .index .carousel .carousel-inner .carousel-item .carousel-caption h5, .index .carousel .carousel-inner .carousel-item .carousel-caption a, .index .carousel .carousel-inner .carousel-item img .carousel-caption p, .index .carousel .carousel-inner .carousel-item img .carousel-caption h5, .index .carousel .carousel-inner .carousel-item img .carousel-caption a {
+  color: black;
+}
+
+.index h2, .index h1, .index p {
+  padding: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.index h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.index h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.index p {
+  font-size: 2rem;
+}
+
+.index .iframe-container {
+  position: relative;
+  margin: auto;
+  background-color: black;
+  width: 80%;
+  padding-bottom: 45%;
+  height: 0;
+}
+
+.index .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=main.css.map */
