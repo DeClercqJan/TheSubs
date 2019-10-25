@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +11,12 @@ body {
   background-color: white !important;
 }
 
-nav {
-  background-color: #dcd4dc;
-}
-
 header {
   border-bottom: 1px solid lightgray;
+}
+header .pos-f-t .navbar .wrapper .img-wrapper span {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
 }
 
 .icon-nav {
@@ -40,31 +41,60 @@ header {
 .album .album main {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
-.album .album .albums {
+.album .album .albums:nth-child(even) {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   width: 50%;
+  margin-bottom: 10%;
 }
-.album .album .albums img {
-  grid-column-start: 2;
-  grid-row-start: 2;
+.album .album .albums:nth-child(even) img {
   border-radius: 50%;
+  order: 2;
   width: 250px;
+  height: 250px;
 }
-.album .album .albums .info-album {
+.album .album .albums:nth-child(even) .info-album {
   margin-left: 20px;
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.album .album .albums .info-album hr {
+.album .album .albums:nth-child(even) .info-album hr {
   background-color: black;
   width: 60%;
 }
-.album .album .albums .info-album p {
+.album .album .albums:nth-child(even) .info-album p {
+  text-align: center;
+}
+.album .album .albums:nth-child(odd) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 10%;
+}
+.album .album .albums:nth-child(odd) img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.album .album .albums:nth-child(odd) .info-album {
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album .album .albums:nth-child(odd) .info-album hr {
+  background-color: black;
+  width: 60%;
+}
+.album .album .albums:nth-child(odd) .info-album p {
   text-align: center;
 }
 @media (max-width: 1000px) {
@@ -76,7 +106,7 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 90%;
+    width: 100vw !important;
   }
   .album .album .albums .info-album {
     margin-top: 20px;
@@ -152,31 +182,60 @@ a:active {
 .album main {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
-.album .albums {
+.album .albums:nth-child(even) {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   width: 50%;
+  margin-bottom: 10%;
 }
-.album .albums img {
-  grid-column-start: 2;
-  grid-row-start: 2;
+.album .albums:nth-child(even) img {
   border-radius: 50%;
+  order: 2;
   width: 250px;
+  height: 250px;
 }
-.album .albums .info-album {
+.album .albums:nth-child(even) .info-album {
   margin-left: 20px;
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.album .albums .info-album hr {
+.album .albums:nth-child(even) .info-album hr {
   background-color: black;
   width: 60%;
 }
-.album .albums .info-album p {
+.album .albums:nth-child(even) .info-album p {
+  text-align: center;
+}
+.album .albums:nth-child(odd) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 10%;
+}
+.album .albums:nth-child(odd) img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.album .albums:nth-child(odd) .info-album {
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album .albums:nth-child(odd) .info-album hr {
+  background-color: black;
+  width: 60%;
+}
+.album .albums:nth-child(odd) .info-album p {
   text-align: center;
 }
 @media (max-width: 1000px) {
@@ -188,7 +247,7 @@ a:active {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 90%;
+    width: 100vw !important;
   }
   .album .albums .info-album {
     margin-top: 20px;

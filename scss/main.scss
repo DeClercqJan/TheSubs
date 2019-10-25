@@ -1,72 +1,78 @@
-@import 'variable';
-@import 'album';
-
+@import "variable";
+@import "album";
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-    font-family: inherit;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: inherit;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: $secondary-bg!important;
+  background-color: $secondary-bg !important;
 }
 
-nav {
-    background-color: $thristle;
-}
-header{
-    border-bottom: 1px solid lightgray;
+header {
+  border-bottom: 1px solid lightgray;
+  .pos-f-t {
+    .navbar {
+      .wrapper {
+        .img-wrapper {
+          span {
+            font-family: "Oswald", sans-serif;
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
 }
 
 .icon-nav {
-    width: 40px;
+  width: 40px;
 }
 .album {
-    @include album;
+  @include album;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  width: 100vw;
+}
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 60px;
+}
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    width: 100vw;
-    
-  }
-  .img-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  button {
-    width: 60px;
-  }
-  
-  a {
-    text-align: center;
-    text-decoration: none !important;
-    color: black !important;
-    border: 1px solid gray;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: green !important;
-    width: 250px;
-    margin-bottom: 20px;
-  
-    &:hover{
-        background-color: darkgreen !important;
-    }
-    &:active{
-        background-color: greenyellow !important;
-    }
+a {
+  text-align: center;
+  text-decoration: none !important;
+  color: black !important;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: green !important;
+  width: 250px;
+  margin-bottom: 20px;
 
+  &:hover {
+    background-color: darkgreen !important;
   }
+  &:active {
+    background-color: greenyellow !important;
+  }
+}
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @include album;
