@@ -1,17 +1,47 @@
 .past-events {
-    background-color: blue;
-    
-      .parallax {
-        /* The image used */
-        background-image: url('TheSubs/img/sea-1337565_1920.jpg');
-      
-        /* Full height */
-        height: 100%; 
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+    height: 90vh;
+
+    main {
+        height: 100%;
+        background-color: $silver;
+
+        article {
+            height: 100%;
+
+            .parallax-text {
+                background-color: $silver;
+                height: 30%;
+            }
+
+            .parallax-1 {
+                /* The image used */
+                background-image: url('/TheSubs/img/sea-1337565_1920.jpg');
+
+                /* Full height */
+                height: 70%;
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+
+            }
+
+            .parallax-2 {
+                /* The image used */
+                background-image: url('/TheSubs/img/sebastien-jermer-n7DY58YFg9E-unsplash.jpg');
+
+                /* Full height */
+                height: 70%;
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
 }
