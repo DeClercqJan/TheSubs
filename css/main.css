@@ -3,7 +3,10 @@
 }
 .past-events main {
   height: 100%;
-  background-color: red;
+  background-color: #bcb4bc;
+}
+.past-events main h1 {
+  text-align: center;
 }
 .past-events main article {
   height: 100%;
@@ -14,9 +17,8 @@
 }
 .past-events main article .past-events-parallax-1 {
   /* The image used */
-  background-image: url("../img/sea-1337565_1920.jpg");
-  /* Full height */
-  height: 70%;
+  background-image: url("../img/pukkelpop.jpg");
+  height: 80%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -25,9 +27,18 @@
 }
 .past-events main article .past-events-parallax-2 {
   /* The image used */
-  background-image: url("../img/sebastien-jermer-n7DY58YFg9E-unsplash.jpg");
-  /* Full height */
-  height: 70%;
+  background-image: url("../img/AB-mei-2019.jpg");
+  height: 80%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.past-events main article .past-events-parallax-3 {
+  /* The image used */
+  background-image: url("../img/werchter.jpg");
+  height: 80%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
