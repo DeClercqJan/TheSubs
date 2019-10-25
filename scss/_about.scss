@@ -1,0 +1,34 @@
+
+
+    @mixin parallax-effect{
+        height: 700px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  
+    
+ 
+  
+.parallax-1 {
+    /* The image used */
+    background-image: url("/img/parallax-1.jpg");
+    @include parallax-effect;
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url("/img/parallax-2.jpg");
+    @include parallax-effect;
+  }
+  
+  .parallax-3 {
+    /* The image used */
+    background-image: url("/img/parallax-3.jpg");
+    @include parallax-effect;
+  }
+  
+  
