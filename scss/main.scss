@@ -10,7 +10,7 @@
   }
 
 body {
-    background-color: $silver;
+    background-color: black !important;
 }
 
 nav {
@@ -37,23 +37,36 @@ header{
   .img-wrapper {
       display: flex;
       justify-content: center;
+      align-items: center;
   }
   button {
     width: 60px;
   }
   
-a {
-    text-decoration: none;
+  a {
+    text-align: center;
+    text-decoration: none !important;
+    color: black !important;
     border: 1px solid gray;
     padding: 10px;
     border-radius: 10px;
-    background-color: green;
+    background-color: green !important;
     width: 250px;
     margin-bottom: 20px;
-}
+  
+    &:hover{
+        background-color: darkgreen !important;
+    }
+    &:active{
+        background-color: greenyellow !important;
+    }
+
+  }
 
 .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+@include album;
