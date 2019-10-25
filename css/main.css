@@ -3,11 +3,8 @@
   padding: 0;
   font-size: 1em;
   font-family: inherit;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #bcb4bc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 nav {
@@ -18,26 +15,32 @@ header {
   border-bottom: 1px solid lightgray;
 }
 
-.icon-nav {
+header .icon-nav {
   width: 40px;
 }
 
-.wrapper {
+header .wrapper {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  -ms-grid-columns: (2fr)[3];
+      grid-template-columns: repeat(3, 2fr);
   width: 100vw;
 }
 
-.img-wrapper {
+header .img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-button {
+header button {
   width: 60px;
 }
 
-a {
+header a {
   text-decoration: none;
   border: 1px solid gray;
   padding: 10px;
@@ -47,10 +50,151 @@ a {
   margin-bottom: 20px;
 }
 
-.menu {
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+footer {
+  max-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #bcb4bc;
+}
+
+footer #footer-logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 45px;
+}
+
+footer #footer-social-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  max-width: 400px;
+}
+
+footer #footer-social-border i {
+  padding: 5px;
+}
+
+footer #footer-social-border i:hover {
+  color: #f70deb;
+}
+
+footer p {
+  margin: auto 0;
+  color: white;
+}
+
+footer a {
+  color: black;
+  padding: 10px;
+}
+
+footer a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f70deb;
+}
+
+.index {
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.index .carousel .carousel-inner {
+  height: 85vh;
+  background-color: white;
+}
+
+.index .carousel .carousel-inner .carousel-item, .index .carousel .carousel-inner .carousel-item img {
+  height: 100%;
+}
+
+.index .carousel .carousel-inner .carousel-item .carousel-caption p, .index .carousel .carousel-inner .carousel-item .carousel-caption h5, .index .carousel .carousel-inner .carousel-item .carousel-caption a, .index .carousel .carousel-inner .carousel-item img .carousel-caption p, .index .carousel .carousel-inner .carousel-item img .carousel-caption h5, .index .carousel .carousel-inner .carousel-item img .carousel-caption a {
+  color: black;
+}
+
+.index h2, .index h1, .index p {
+  padding: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.index h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.index h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.index p {
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.index .iframe-container {
+  position: relative;
+  margin: auto;
+  background-color: black;
+  width: 80%;
+  padding-bottom: 45%;
+  height: 0;
+}
+
+.index .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 30px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
