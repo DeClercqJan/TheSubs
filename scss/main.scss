@@ -1,7 +1,9 @@
 @import 'variable';
-@import 'past-events.scss';
+@import 'album';
+@import 'about';
+@import 'past-events';
 
-* {
+*{
     margin: 0;
     padding: 0;
     font-size: 1em;
@@ -53,3 +55,5 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
+@include aboutme;

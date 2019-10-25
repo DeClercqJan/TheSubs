@@ -3,18 +3,18 @@
 }
 .past-events main {
   height: 100%;
-  background-color: #bcb4bc;
+  background-color: red;
 }
 .past-events main article {
   height: 100%;
 }
-.past-events main article .parallax-text {
+.past-events main article .past-events-parallax-text {
   background-color: #bcb4bc;
   height: 30%;
 }
-.past-events main article .parallax-1 {
+.past-events main article .past-events-parallax-1 {
   /* The image used */
-  background-image: url("/TheSubs/img/sea-1337565_1920.jpg");
+  background-image: url("../img/sea-1337565_1920.jpg");
   /* Full height */
   height: 70%;
   /* Create the parallax scrolling effect */
@@ -23,9 +23,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.past-events main article .parallax-2 {
+.past-events main article .past-events-parallax-2 {
   /* The image used */
-  background-image: url("/TheSubs/img/sebastien-jermer-n7DY58YFg9E-unsplash.jpg");
+  background-image: url("../img/sebastien-jermer-n7DY58YFg9E-unsplash.jpg");
   /* Full height */
   height: 70%;
   /* Create the parallax scrolling effect */
@@ -88,6 +88,37 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about .parallax-1 {
+  /* The image used */
+  background-image: url("/img/parallax-1.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .parallax-2 {
+  /* The image used */
+  background-image: url("/img/parallax-2.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .parallax-3 {
+  /* The image used */
+  background-image: url("/img/parallax-3.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,19 +3,18 @@
 
     main {
         height: 100%;
-        background-color: $silver;
+        background-color: red;
 
         article {
             height: 100%;
 
-            .parallax-text {
+            .past-events-parallax-text {
                 background-color: $silver;
                 height: 30%;
             }
-
-            .parallax-1 {
+            .past-events-parallax-1 {
                 /* The image used */
-                background-image: url('/TheSubs/img/sea-1337565_1920.jpg');
+                background-image: url('../img/sea-1337565_1920.jpg');
 
                 /* Full height */
                 height: 70%;
@@ -29,9 +28,9 @@
 
             }
 
-            .parallax-2 {
+            .past-events-parallax-2 {
                 /* The image used */
-                background-image: url('/TheSubs/img/sebastien-jermer-n7DY58YFg9E-unsplash.jpg');
+                background-image: url('../img/sebastien-jermer-n7DY58YFg9E-unsplash.jpg');
 
                 /* Full height */
                 height: 70%;
