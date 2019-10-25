@@ -1,78 +1,185 @@
-@import "variable";
-@import "album";
-@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import 'variable';
+@import 'album';
+@import 'contact';
+@import 'about';
+
+
 * {
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  font-family: inherit;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+
+ 
+
+
+nav {
+    background-color: $thristle;
+}
+header{
+
+    border-bottom: 1px solid lightgray;
+
+  .icon-nav {
+    width: 40px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 100vw;
+  }
+
+  .img-wrapper {
+      display: flex;
+      justify-content: center;
+  }
+  
+  button {
+    width: 60px;
+  }
+
+  a {
+    text-align: center;
+    text-decoration: none !important;
+    color: black !important;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green !important;
+    width: 250px;
+    margin-bottom: 20px;
+  
+    &:hover {
+      background-color: darkgreen !important;
+    }
+    &:active {
+      background-color: greenyellow !important;
+    }
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-body {
-  background-color: $secondary-bg !important;
-}
+footer{
+  max-height: 50px;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $silver;
 
-header {
-  border-bottom: 1px solid lightgray;
-  .pos-f-t {
-    .navbar {
-      .wrapper {
-        .img-wrapper {
-          span {
-            font-family: "Oswald", sans-serif;
-            font-size: 1.5em;
+ #footer-logo img{
+    object-fit: contain;
+    max-height: 45px;
+  }
+
+  #footer-social-border{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-grow: 2;
+    max-width: 400px;
+
+    i{
+      padding: 5px;
+    }
+
+    i:hover{
+      color: $magenta;
+      }
+    }
+
+    p{
+    margin: auto 0;
+    color: $secondary-bg;
+    }
+
+    a{
+    color: $primary-text;
+    padding: 10px;
+    }
+
+    a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: $magenta;
+    }
+  }
+
+.index{
+  text-align: center;
+  color: $primary-text;
+  background-color: $secondary-bg;
+
+  .carousel{
+
+    .carousel-inner{
+      height: 85vh;
+      background-color: white;
+
+      .carousel-item, .carousel-item img {
+        height: 100%;
+
+        .carousel-caption{
+          p, h5, a{
+            color: $primary-text;
           }
         }
       }
     }
   }
-}
 
-.icon-nav {
-  width: 40px;
-}
-.album {
-  @include album;
-}
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  width: 100vw;
-}
-.img-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-button {
-  width: 60px;
-}
-
-a {
-  text-align: center;
-  text-decoration: none !important;
-  color: black !important;
-  border: 1px solid gray;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: green !important;
-  width: 250px;
-  margin-bottom: 20px;
-
-  &:hover {
-    background-color: darkgreen !important;
+  h2, h1, p{
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
   }
-  &:active {
-    background-color: greenyellow !important;
+  h1{
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h2{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  p{
+    font-size: 2rem;
+      margin: auto;
+      text-align: center; 
+  }
+  .iframe-container{
+    position: relative;
+    margin: auto;
+    background-color: black;
+    width: 80%;
+    padding-bottom: 45%; 
+    height: 0;
+
+    iframe{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media only screen and (min-width: 768px) {
+  footer {
+  padding: 30px;
+  }
 }
-
 @include album;
