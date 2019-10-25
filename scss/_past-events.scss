@@ -1,5 +1,5 @@
 @mixin past-events-parallax-effect {
-    height: 80%;
+    height: 75%;
 
     /* Create the parallax scrolling effect */
     background: {
@@ -26,7 +26,7 @@
 
             .past-events-parallax-text {
                 background-color: $silver;
-                height: 30%;
+                height: 25%;
             }
 
             .past-events-parallax-1 {
@@ -51,6 +51,22 @@
 
                 @include past-events-parallax-effect;
 
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .past-events {
+
+        main {
+
+            h1 {}
+
+            article {
+                .past-events-parallax-text p a {
+                    display: none;
+                }
             }
         }
     }
