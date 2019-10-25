@@ -1,5 +1,5 @@
 .past-events {
-  height: 90vh;
+  height: 100px;
 }
 .past-events main {
   height: 100%;
@@ -46,6 +46,27 @@
   background-size: cover;
 }
 
+/*
+#page-container {
+    position: relative;
+    height: 100%;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+    /* Footer height */
+/*
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* Footer height */
+/*
+}
+*/
 @media screen and (min-width: 768px) {
   .past-events main article .past-events-parallax-text p a {
     display: none;
@@ -61,6 +82,10 @@
 
 nav {
   background-color: #dcd4dc;
+}
+nav .img-wrapper span {
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
 }
 
 header {
@@ -82,13 +107,21 @@ header button {
   width: 60px;
 }
 header a {
-  text-decoration: none;
+  text-align: center;
+  text-decoration: none !important;
+  color: black !important;
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
-  background-color: green;
+  background-color: green !important;
   width: 250px;
   margin-bottom: 20px;
+}
+header a:hover {
+  background-color: darkgreen !important;
+}
+header a:active {
+  background-color: greenyellow !important;
 }
 header .menu {
   display: flex;
@@ -98,7 +131,7 @@ header .menu {
 
 footer {
   max-height: 50px;
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
@@ -193,35 +226,105 @@ footer a:hover {
     padding: 30px;
   }
 }
-.about .parallax-1 {
-  /* The image used */
-  background-image: url("/img/parallax-1.jpg");
-  height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  grid-column-start: 2;
+  margin-bottom: 20px;
 }
-.about .parallax-2 {
-  /* The image used */
-  background-image: url("/img/parallax-2.jpg");
-  height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#title h1 {
+  margin-top: 20px;
 }
-.about .parallax-3 {
-  /* The image used */
-  background-image: url("/img/parallax-3.jpg");
-  height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#title hr {
+  background-color: black;
+  width: 90%;
+}
+
+.album main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.album .albums:nth-child(even) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  width: 50%;
+  margin-bottom: 10%;
+}
+.album .albums:nth-child(even) img {
+  border-radius: 50%;
+  order: 2;
+  width: 250px;
+  height: 250px;
+}
+.album .albums:nth-child(even) .info-album {
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album .albums:nth-child(even) .info-album hr {
+  background-color: black;
+  width: 60%;
+}
+.album .albums:nth-child(even) .info-album p {
+  text-align: center;
+}
+.album .albums:nth-child(odd) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 10%;
+}
+.album .albums:nth-child(odd) img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.album .albums:nth-child(odd) .info-album {
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album .albums:nth-child(odd) .info-album hr {
+  background-color: black;
+  width: 60%;
+}
+.album .albums:nth-child(odd) .info-album p {
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .album main {
+    display: flex;
+    justify-items: center;
+  }
+  .album .albums {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw !important;
+  }
+  .album .albums .info-album {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .album .albums .info-album hr {
+    background-color: white;
+    width: 90%;
+  }
+  .album .albums .info-album p {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
