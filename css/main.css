@@ -228,28 +228,62 @@ footer a:hover {
 .album .albums:nth-child(odd) .info-album p {
   text-align: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 750px) {
   .album main {
     display: flex;
-    justify-items: center;
-  }
-  .album .albums {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100vw !important;
-  }
-  .album .albums .info-album {
-    margin-top: 20px;
-    display: flex;
-    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
   }
-  .album .albums .info-album hr {
-    background-color: white;
-    width: 90%;
+  .album .albums:nth-child(even) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    width: 100% !important;
+    margin-bottom: 10%;
   }
-  .album .albums .info-album p {
+  .album .albums:nth-child(even) img {
+    border-radius: 50%;
+    order: 2;
+    width: 250px;
+    height: 250px;
+  }
+  .album .albums:nth-child(even) .info-album {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .album .albums:nth-child(even) .info-album hr {
+    background-color: black;
+    width: 60%;
+  }
+  .album .albums:nth-child(even) .info-album p {
+    text-align: center;
+  }
+  .album .albums:nth-child(odd) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .album .albums:nth-child(odd) img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+  }
+  .album .albums:nth-child(odd) .info-album {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .album .albums:nth-child(odd) .info-album hr {
+    background-color: black;
+    width: 60%;
+  }
+  .album .albums:nth-child(odd) .info-album p {
     text-align: center;
   }
 }
