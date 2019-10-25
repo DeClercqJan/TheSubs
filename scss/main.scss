@@ -2,7 +2,7 @@
 @import 'album';
 @import 'contact';
 @import 'about';
-
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 * {
     margin: 0;
@@ -17,6 +17,12 @@
 
 nav {
     background-color: $thristle;
+    .img-wrapper {
+      span {
+        font-size: 1.5em;
+        font-family: 'Oswald', sans-serif;
+      }
+    }
 }
 header{
 
