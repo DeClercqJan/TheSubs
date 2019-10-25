@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: black !important;
+  background-color: white !important;
 }
 
 nav {
@@ -34,11 +34,8 @@ header {
   margin-top: 20px;
 }
 .album #title hr {
-  background-color: white;
+  background-color: black;
   width: 90%;
-}
-.album .album {
-  color: white;
 }
 .album .album main {
   display: flex;
@@ -64,7 +61,7 @@ header {
   align-items: center;
 }
 .album .album .albums .info-album hr {
-  background-color: white;
+  background-color: black;
   width: 60%;
 }
 .album .album .albums .info-album p {
@@ -148,13 +145,10 @@ a:active {
   margin-top: 20px;
 }
 #title hr {
-  background-color: white;
+  background-color: black;
   width: 90%;
 }
 
-.album {
-  color: white;
-}
 .album main {
   display: flex;
   justify-content: space-evenly;
@@ -179,7 +173,7 @@ a:active {
   align-items: center;
 }
 .album .albums .info-album hr {
-  background-color: white;
+  background-color: black;
   width: 60%;
 }
 .album .albums .info-album p {
