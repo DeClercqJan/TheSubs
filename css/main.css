@@ -1,3 +1,18 @@
+.past-events {
+  background-color: blue;
+}
+.past-events .parallax {
+  /* The image used */
+  background-image: url(/TheSubs/img/sea-1337565_1920.jpg);
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,9 +1,5 @@
 @import 'variable';
-<<<<<<< HEAD
-@import "_past_events.scss";
-=======
-@import 'album';
->>>>>>> b1281950e3068bb860522256529e5d591a96d247
+@import "past-events.scss";
 
 * {
     margin: 0;
@@ -17,8 +13,6 @@ body {
     background-color: $silver;
 }
 
-<<<<<<< HEAD
-=======
 nav {
     background-color: $thristle;
 }
@@ -29,10 +23,6 @@ header{
 .icon-nav {
     width: 40px;
 }
-.album {
-    @include album;
-}
-
 
   .wrapper {
     display: grid;
@@ -63,10 +53,3 @@ a {
     flex-direction: column;
     align-items: center;
 }
-<<<<<<< HEAD
-.collapse {
-    height: calc(100vh - 60px);
-}
->>>>>>> b1281950e3068bb860522256529e5d591a96d247
-=======
->>>>>>> 53b174b7d24a1027063cf401996b0dcdf0482187
