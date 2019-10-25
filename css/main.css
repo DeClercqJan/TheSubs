@@ -3,8 +3,7 @@
   padding: 0;
   font-size: 1em;
   font-family: inherit;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 nav {
@@ -14,119 +13,80 @@ nav {
 header {
   border-bottom: 1px solid lightgray;
 }
-
 header .icon-nav {
   width: 40px;
 }
-
 header .wrapper {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (2fr)[3];
-      grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 2fr);
   width: 100vw;
 }
-
 header .img-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 header button {
   width: 60px;
 }
-
 header a {
-  text-decoration: none;
+  text-align: center;
+  text-decoration: none !important;
+  color: black !important;
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
-  background-color: green;
+  background-color: green !important;
   width: 250px;
   margin-bottom: 20px;
 }
-
+header a:hover {
+  background-color: darkgreen !important;
+}
+header a:active {
+  background-color: greenyellow !important;
+}
 header .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
   max-height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
   text-align: center;
   background-color: #bcb4bc;
 }
-
 footer #footer-logo img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-height: 45px;
 }
-
 footer #footer-social-border {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-grow: 2;
   max-width: 400px;
 }
-
 footer #footer-social-border i {
   padding: 5px;
 }
-
 footer #footer-social-border i:hover {
   color: #f70deb;
 }
-
 footer p {
   margin: auto 0;
   color: white;
 }
-
 footer a {
   color: black;
   padding: 10px;
 }
-
 footer a:hover {
   font-weight: bold;
   text-decoration: none;
@@ -138,43 +98,35 @@ footer a:hover {
   color: black;
   background-color: white;
 }
-
 .index .carousel .carousel-inner {
   height: 85vh;
   background-color: white;
 }
-
 .index .carousel .carousel-inner .carousel-item, .index .carousel .carousel-inner .carousel-item img {
   height: 100%;
 }
-
 .index .carousel .carousel-inner .carousel-item .carousel-caption p, .index .carousel .carousel-inner .carousel-item .carousel-caption h5, .index .carousel .carousel-inner .carousel-item .carousel-caption a, .index .carousel .carousel-inner .carousel-item img .carousel-caption p, .index .carousel .carousel-inner .carousel-item img .carousel-caption h5, .index .carousel .carousel-inner .carousel-item img .carousel-caption a {
   color: black;
 }
-
 .index h2, .index h1, .index p {
   padding: 15px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
-
 .index h1 {
   font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .index h2 {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .index p {
   font-size: 2rem;
   margin: auto;
   text-align: center;
 }
-
 .index .iframe-container {
   position: relative;
   margin: auto;
@@ -183,7 +135,6 @@ footer a:hover {
   padding-bottom: 45%;
   height: 0;
 }
-
 .index .iframe-container iframe {
   position: absolute;
   top: 0;
@@ -197,4 +148,105 @@ footer a:hover {
     padding: 30px;
   }
 }
+#title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  grid-column-start: 2;
+  margin-bottom: 20px;
+}
+#title h1 {
+  margin-top: 20px;
+}
+#title hr {
+  background-color: black;
+  width: 90%;
+}
+
+.album main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.album .albums:nth-child(even) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  width: 50%;
+  margin-bottom: 10%;
+}
+.album .albums:nth-child(even) img {
+  border-radius: 50%;
+  order: 2;
+  width: 250px;
+  height: 250px;
+}
+.album .albums:nth-child(even) .info-album {
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album .albums:nth-child(even) .info-album hr {
+  background-color: black;
+  width: 60%;
+}
+.album .albums:nth-child(even) .info-album p {
+  text-align: center;
+}
+.album .albums:nth-child(odd) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 10%;
+}
+.album .albums:nth-child(odd) img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.album .albums:nth-child(odd) .info-album {
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album .albums:nth-child(odd) .info-album hr {
+  background-color: black;
+  width: 60%;
+}
+.album .albums:nth-child(odd) .info-album p {
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .album main {
+    display: flex;
+    justify-items: center;
+  }
+  .album .albums {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw !important;
+  }
+  .album .albums .info-album {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .album .albums .info-album hr {
+    background-color: white;
+    width: 90%;
+  }
+  .album .albums .info-album p {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
