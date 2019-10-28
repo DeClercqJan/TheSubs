@@ -299,38 +299,6 @@ footer a:hover {
     width: 80%;
     padding-bottom: 45%;
   }
-
-  .index p {
-    font-size: 2rem;
-  }
-  .index h2 {
-    font-size: 4rem;
-  }
-  .index h1 {
-    font-size: 6rem;
-  }
-  .index h2, .index h1, .index p {
-    padding: 15px;
-  }
-  .index .para2 {
-    height: 400px;
-  }
-  .index .para3 {
-    height: 100vh;
-  }
-  .index .para1 {
-    background-size: contain;
-    background-position: center;
-    height: 425px;
-  }
-  .index .para4 {
-    height: 100vh;
-  }
-  .index .iframe-container {
-    margin: auto;
-    width: 80%;
-    padding-bottom: 45%;
-  }
 }
 #title {
   display: flex;
@@ -358,14 +326,13 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  width: 50%;
   margin-bottom: 10%;
 }
 .album .albums:nth-child(even) img {
   border-radius: 50%;
   order: 2;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 .album .albums:nth-child(even) .info-album {
   margin-right: 40px;
@@ -386,7 +353,6 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 50%;
   margin-bottom: 10%;
 }
 .album .albums:nth-child(odd) img {
@@ -462,6 +428,169 @@ footer a:hover {
   .album .albums:nth-child(odd) .info-album p {
     text-align: center;
     font-size: 1em;
+  }
+}
+
+.past-events {
+  background-color: #bcb4bc;
+}
+.past-events h1 {
+  text-align: center;
+}
+.past-events .past-events-parallax-text {
+  background-color: #bcb4bc;
+}
+.past-events .past-events-parallax-1 {
+  /* The image used */
+  background-image: url("../img/pukkelpop.jpg");
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.past-events .past-events-parallax-2 {
+  /* The image used */
+  background-image: url("../img/AB-mei-2019.jpg");
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.past-events .past-events-parallax-3 {
+  /* The image used */
+  background-image: url("../img/werchter.jpg");
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .past-events .past-events-parallax-text p {
+    display: block;
+  }
+  .past-events .past-events-parallax-text button {
+    display: none;
+  }
+  .past-events .past-events-parallax-text .past-events-parallax-1 {
+    /* The image used */
+    background-image: url("../img/pukkelpop-mobile.jpg");
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.about main {
+  display: flex;
+  justify-content: center;
+}
+.about main article {
+  display: grid;
+  width: 80%;
+}
+.about .container-fluid {
+  display: grid;
+  width: 80%;
+  row-gap: 100px;
+  column-gap: 50px;
+  justify-self: center;
+}
+.about section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about .about-parallax-1 {
+  /* The image used */
+  background-image: url("/img/parallax-1.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .about-parallax-2 {
+  /* The image used */
+  background-image: url("/img/parallax-2.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .about-parallax-3 {
+  /* The image used */
+  background-image: url("/img/parallax-3.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .about main article {
+    width: 100%;
+    text-align: center;
+  }
+  .about main article h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+  }
+  .about section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .about .about-parallax-1 {
+    /* The image used */
+    background-image: url("/img/parallax-1.jpg");
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about .about-parallax-2 {
+    /* The image used */
+    background-image: url("/img/parallax-2.jpg");
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about .about-parallax-3 {
+    /* The image used */
+    background-image: url("/img/parallax-3.jpg");
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

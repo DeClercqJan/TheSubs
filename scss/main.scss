@@ -1,6 +1,7 @@
 @import 'variable';
 @import 'album';
 @import 'contact';
+@import 'past-events';
 @import 'about';
 
 
@@ -336,4 +337,5 @@ footer{
   }
 }
 @include album;
+@include past-event;
 @include about;
