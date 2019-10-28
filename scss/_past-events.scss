@@ -1,76 +1,68 @@
 @mixin past-events-parallax-effect {
-
     /* Create the parallax scrolling effect */
     background: {
-        attachment: fixed;
-        position: center;
-        repeat: no-repeat;
-        size: cover;
+      attachment: fixed;
+      position: center;
+      repeat: no-repeat;
+      size: cover;
     }
-}
-
-@mixin past-event {
-    .past-events {
-        background-color: $silver;
-
-        h1 {
-            text-align: center;
-        }
-
-            .past-events-parallax-text {
-                background-color: $silver;
-            }
-
-            .past-events-parallax-1 {
-                /* The image used */
-                background-image: url('../img/pukkelpop.jpg');
-                height: 400px;
-
-                @include past-events-parallax-effect;
-
-            }
-
-            .past-events-parallax-2 {
-                /* The image used */
-                background-image: url('../img/AB-mei-2019.jpg');
-                height: 400px;
-
-                @include past-events-parallax-effect;
-
-            }
-
-            .past-events-parallax-3 {
-                /* The image used */
-                background-image: url('../img/werchter.jpg');
-                height: 400px;
-
-                @include past-events-parallax-effect;
-            }
-        }
-
-@media screen and (min-width: 768px) {
-    .past-events {
-
-                .past-events-parallax-text 
-                { 
-                    p {
-                        display: block;
-                    }
-                button {
-                    display: none;
-                }
-
-                .past-events-parallax-1 {
-                    /* The image used */
-                    background-image: url('../img/pukkelpop-mobile.jpg');
-                    height: 400px;
-                    display: flex;
-                    justify-content: center;
-    
-                    @include past-events-parallax-effect;
-    
-                }
-            }
-        }
+  }
+  
+  .past-events {
+    background-color: $silver;
+  
+    h1 {
+      text-align: center;
     }
-}
+  
+    .past-events-parallax-text {
+      background-color: $silver;
+    }
+  
+    .past-events-parallax-1 {
+      /* The image used */
+      background-image: url("../img/pukkelpop.jpg");
+      height: 400px;
+  
+      @include past-events-parallax-effect;
+    }
+  
+    .past-events-parallax-2 {
+      /* The image used */
+      background-image: url("../img/AB-mei-2019.jpg");
+      height: 400px;
+  
+      @include past-events-parallax-effect;
+    }
+  
+    .past-events-parallax-3 {
+      /* The image used */
+      background-image: url("../img/werchter.jpg");
+      height: 400px;
+  
+      @include past-events-parallax-effect;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .past-events {
+      .past-events-parallax-text {
+        p {
+          display: block;
+        }
+        button {
+          display: none;
+        }
+  
+        .past-events-parallax-1 {
+          /* The image used */
+          background-image: url("../img/pukkelpop-mobile.jpg");
+          height: 400px;
+          display: flex;
+          justify-content: center;
+  
+          @include past-events-parallax-effect;
+        }
+      }
+    }
+  }
