@@ -1,5 +1,5 @@
 .past-events {
-  height: 100px;
+  height: 90vh;
 }
 .past-events main {
   height: 100%;
@@ -46,27 +46,6 @@
   background-size: cover;
 }
 
-/*
-#page-container {
-    position: relative;
-    height: 100%;
-}
-
-#content-wrap {
-    padding-bottom: 2.5rem;
-    /* Footer height */
-/*
-}
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    /* Footer height */
-/*
-}
-*/
 @media screen and (min-width: 768px) {
   .past-events main article .past-events-parallax-text p a {
     display: none;
