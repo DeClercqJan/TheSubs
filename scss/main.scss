@@ -1,7 +1,8 @@
 @import 'variable';
 @import 'album';
+@import 'contact';
 @import 'about';
-@import 'past-events';
+
 
 *{
     margin: 0;
@@ -268,40 +269,6 @@ footer{
   footer {
   padding: 30px;
   }
-  .index{
-
-    p{
-      font-size: 2rem;
-    }
-    h2{
-      font-size: 4rem;
-    }
-    h1{
-    font-size: 6rem;
-    }
-    h2, h1, p{
-      padding: 15px;
-    }
-    .para2{
-      height: 400px;
-    }
-    .para3{
-      height: 100vh;
-    }
-    .para1{
-    background-size: contain;
-    background-position: center;
-    height: 425px;
-    }
-    .para4{
-    height: 100vh;
-
-    }
-    .iframe-container{
-      margin: auto;
-      width: 80%;
-      padding-bottom: 45%; 
-    }
-  }
 }
 @include album;
+@include about;
