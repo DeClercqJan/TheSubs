@@ -172,7 +172,6 @@ footer a:hover {
 }
 
 .index .para1 {
-  background-color: white;
   background-image: url(../img/para1-bg);
   width: 100%;
   height: 100vh;
@@ -193,7 +192,6 @@ footer a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: transparent !important;
 }
 
 .index .para2 {
@@ -215,7 +213,7 @@ footer a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 150vh;
+  min-height: 100vh;
 }
 
 .index .para4 {
@@ -231,7 +229,13 @@ footer a:hover {
 }
 
 .index #index-readmore {
-  display: none;
+  display: block;
+  min-width: 150px;
+  padding: 15px;
+  border-radius: 40px;
+  font-size: 3em;
+  -webkit-animation: animate 0.4s linear infinite;
+          animation: animate 0.4s linear infinite;
 }
 
 .index #index-read-even-more {
@@ -244,7 +248,7 @@ footer a:hover {
 
 .index .index-animation {
   position: relative;
-  background: linear-gradient(182deg, #bcb4bc, #e4e0e0);
+  background: linear-gradient(182deg, #bcb4bc, #dbd6d6);
   background-size: 200% 200%;
   padding-bottom: 50px;
   -webkit-animation: AnimationName 4s ease infinite;
@@ -275,7 +279,7 @@ footer a:hover {
   }
 }
 
-.index .index-animation h2, .index .index-animation h1, .index .index-animation p {
+.index h2, .index h1, .index p {
   font-family: 'Oswald', sans-serif;
   padding: 40px;
   margin: 0;
@@ -299,31 +303,31 @@ footer a:hover {
 
 @-webkit-keyframes animate {
   0%, 100% {
-    text-shadow: -2px -2px 0 #f70deb, 2px 2px 0 #fc7c74;
+    text-shadow: -2px -2px 0 #f70deb, 2px 2px 0 #0ff;
   }
   25% {
-    text-shadow: 2px 2px 0 #f70deb, -2px -2px 0 #fc7c74;
+    text-shadow: 2px 2px 0 #f70deb, -2px -2px 0 #0ff;
   }
   50% {
-    text-shadow: 2px -2px 0 #f70deb, -2px 2px 0 #fc7c74;
+    text-shadow: 2px -2px 0 #f70deb, -2px 2px 0 #0ff;
   }
   75% {
-    text-shadow: -2px 2px 0 #f70deb, 2px -2px 0 #fc7c74;
+    text-shadow: -2px 2px 0 #f70deb, 2px -2px 0 #0ff;
   }
 }
 
 @keyframes animate {
   0%, 100% {
-    text-shadow: -2px -2px 0 #f70deb, 2px 2px 0 #fc7c74;
+    text-shadow: -2px -2px 0 #f70deb, 2px 2px 0 #0ff;
   }
   25% {
-    text-shadow: 2px 2px 0 #f70deb, -2px -2px 0 #fc7c74;
+    text-shadow: 2px 2px 0 #f70deb, -2px -2px 0 #0ff;
   }
   50% {
-    text-shadow: 2px -2px 0 #f70deb, -2px 2px 0 #fc7c74;
+    text-shadow: 2px -2px 0 #f70deb, -2px 2px 0 #0ff;
   }
   75% {
-    text-shadow: -2px 2px 0 #f70deb, 2px -2px 0 #fc7c74;
+    text-shadow: -2px 2px 0 #f70deb, 2px -2px 0 #0ff;
   }
 }
 
@@ -347,7 +351,7 @@ footer a:hover {
   height: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   footer {
     padding: 30px;
     font-size: 1.5em;
@@ -360,15 +364,6 @@ footer a:hover {
   }
   footer #footer-social-border {
     max-width: 600px;
-  }
-  .index #index-readmore {
-    display: block;
-    min-width: 150px;
-    padding: 15px;
-    border-radius: 40px;
-    font-size: 3em;
-    -webkit-animation: animate 0.4s linear infinite;
-            animation: animate 0.4s linear infinite;
   }
   .index p {
     font-size: 2rem;
@@ -384,6 +379,9 @@ footer a:hover {
   }
   .index .para2 {
     height: 400px;
+  }
+  .index .para3 {
+    min-height: 150vh;
   }
   .index .para1 {
     background-position: center;
