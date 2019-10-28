@@ -1,6 +1,7 @@
 @import 'variable';
 @import 'album';
 @import 'contact';
+@import 'past-events';
 @import 'about';
 
 
@@ -137,14 +138,14 @@ footer{
 
   .para1, .para2, .para3, .para4{
     position: relative;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
 
   .para1{
-    background-image: url(../img/para1-bg);
+    background-image: url(../img/index-para1.jpg);
     width: 100%;
     height: 100vh;
 
