@@ -23,7 +23,7 @@
             .past-events-parallax-1 {
                 /* The image used */
                 background-image: url('../img/pukkelpop.jpg');
-                height: 400px;
+                height: 500px;
 
                 @include past-events-parallax-effect;
 
@@ -32,7 +32,7 @@
             .past-events-parallax-2 {
                 /* The image used */
                 background-image: url('../img/AB-mei-2019.jpg');
-                height: 400px;
+                height: 500px;
 
                 @include past-events-parallax-effect;
 
@@ -41,7 +41,7 @@
             .past-events-parallax-3 {
                 /* The image used */
                 background-image: url('../img/werchter.jpg');
-                height: 400px;
+                height: 500px;
 
                 @include past-events-parallax-effect;
 
@@ -50,8 +50,15 @@
 
 @media screen and (min-width: 768px) {
     .past-events {
-                .past-events-parallax-text p a {
+
+                .past-events-parallax-text 
+                { 
+                    p {
+                        display: block;
+                    }
+                button {
                     display: none;
                 }
             }
         }
+    }

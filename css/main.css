@@ -10,7 +10,7 @@
 .past-events .past-events-parallax-1 {
   /* The image used */
   background-image: url("../img/pukkelpop.jpg");
-  height: 400px;
+  height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -20,7 +20,7 @@
 .past-events .past-events-parallax-2 {
   /* The image used */
   background-image: url("../img/AB-mei-2019.jpg");
-  height: 400px;
+  height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -30,7 +30,7 @@
 .past-events .past-events-parallax-3 {
   /* The image used */
   background-image: url("../img/werchter.jpg");
-  height: 400px;
+  height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -39,7 +39,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .past-events .past-events-parallax-text p a {
+  .past-events .past-events-parallax-text p {
+    display: block;
+  }
+  .past-events .past-events-parallax-text button {
     display: none;
   }
 }
@@ -452,10 +455,6 @@ footer a:hover {
     text-align: center;
     font-size: 1em;
   }
-}
-
-a {
-  color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
