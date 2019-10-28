@@ -1,56 +1,3 @@
-.past-events {
-  height: 90vh;
-}
-.past-events main {
-  height: 100%;
-  background-color: #bcb4bc;
-}
-.past-events main h1 {
-  text-align: center;
-}
-.past-events main article {
-  height: 100%;
-}
-.past-events main article .past-events-parallax-text {
-  background-color: #bcb4bc;
-  height: 25%;
-}
-.past-events main article .past-events-parallax-1 {
-  /* The image used */
-  background-image: url("../img/pukkelpop.jpg");
-  height: 75%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.past-events main article .past-events-parallax-2 {
-  /* The image used */
-  background-image: url("../img/AB-mei-2019.jpg");
-  height: 75%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.past-events main article .past-events-parallax-3 {
-  /* The image used */
-  background-image: url("../img/werchter.jpg");
-  height: 75%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .past-events main article .past-events-parallax-text p a {
-    display: none;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -222,6 +169,57 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.past-events {
+  height: 90vh;
+}
+.past-events main {
+  height: 100%;
+  background-color: #bcb4bc;
+}
+.past-events main h1 {
+  text-align: center;
+}
+.past-events main article .past-events-parallax-text {
+  background-color: #bcb4bc;
+  height: 25%;
+}
+.past-events main article .past-events-parallax-1 {
+  /* The image used */
+  background-image: url("../img/pukkelpop.jpg");
+  height: 75%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.past-events main article .past-events-parallax-2 {
+  /* The image used */
+  background-image: url("../img/AB-mei-2019.jpg");
+  height: 75%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.past-events main article .past-events-parallax-3 {
+  /* The image used */
+  background-image: url("../img/werchter.jpg");
+  height: 75%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .past-events main article .past-events-parallax-text p a {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
