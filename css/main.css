@@ -9,6 +9,10 @@
 nav {
   background-color: #dcd4dc;
 }
+nav .img-wrapper span {
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
+}
 
 header {
   border-bottom: 1px solid lightgray;
@@ -29,13 +33,21 @@ header button {
   width: 60px;
 }
 header a {
-  text-decoration: none;
+  text-align: center;
+  text-decoration: none !important;
+  color: black !important;
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
-  background-color: green;
+  background-color: green !important;
   width: 250px;
   margin-bottom: 20px;
+}
+header a:hover {
+  background-color: darkgreen !important;
+}
+header a:active {
+  background-color: greenyellow !important;
 }
 header .menu {
   display: flex;
@@ -45,7 +57,7 @@ header .menu {
 
 footer {
   max-height: 50px;
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
@@ -171,55 +183,49 @@ footer a:hover {
   background-size: cover;
 }
 
-.past-events {
-  height: 90vh;
+.pastEvents {
+  height: 100vh;
 }
-.past-events main {
+.pastEvents main {
   height: 100%;
   background-color: #bcb4bc;
 }
-.past-events main h1 {
+.pastEvents main h1 {
   text-align: center;
 }
-.past-events main article .past-events-parallax-text {
+.pastEvents main .past-events-parallax-text {
   background-color: #bcb4bc;
   height: 25%;
 }
-.past-events main article .past-events-parallax-1 {
+.pastEvents main .past-events-parallax-1 {
   /* The image used */
   background-image: url("../img/pukkelpop.jpg");
-  height: 75%;
+  height: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.past-events main article .past-events-parallax-2 {
+.pastEvents main .past-events-parallax-2 {
   /* The image used */
   background-image: url("../img/AB-mei-2019.jpg");
-  height: 75%;
+  height: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.past-events main article .past-events-parallax-3 {
+.pastEvents main .past-events-parallax-3 {
   /* The image used */
   background-image: url("../img/werchter.jpg");
-  height: 75%;
+  height: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .past-events main article .past-events-parallax-text p a {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

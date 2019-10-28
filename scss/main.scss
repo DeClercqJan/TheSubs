@@ -16,6 +16,12 @@
 
 nav {
     background-color: $thristle;
+    .img-wrapper {
+      span {
+        font-size: 1.5em;
+        font-family: 'Oswald', sans-serif;
+      }
+    }
 }
 header{
 
@@ -41,25 +47,33 @@ header{
   }
 
   a {
-    text-decoration: none;
+    text-align: center;
+    text-decoration: none !important;
+    color: black !important;
     border: 1px solid gray;
     padding: 10px;
     border-radius: 10px;
-    background-color: green;
+    background-color: green !important;
     width: 250px;
     margin-bottom: 20px;
+  
+    &:hover {
+      background-color: darkgreen !important;
+    }
+    &:active {
+      background-color: greenyellow !important;
+    }
   }
-
   .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-  
+
 footer{
   max-height: 50px;
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
