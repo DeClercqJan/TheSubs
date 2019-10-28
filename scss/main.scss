@@ -12,7 +12,9 @@
     box-sizing: border-box;
   }
 
- 
+ html{
+  scroll-behavior: smooth;
+ }
 
 
 nav {
@@ -126,57 +128,124 @@ footer{
   color: $primary-text;
   background-color: $silver;
 
+  a{
+    text-decoration: none;
+    color: $primary-text;
+    font-size: 2em;
+  }
+
+  a:hover{
+  text-transform: uppercase;
+  color: $salmon
+  }
+
   .para1, .para2, .para3, .para4{
     position: relative;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
   .para1, .para2, .para3{
     opacity: 0.7;
-    height: 400px;
+    height: 200px;
   }
   .para1{
-    background-image: url(../img/index-para1.jpg);
+    background-color: white;
+    background-image: url(../img/index-para1-1.jpg);
+    width: 100%;
+    height: 75vh;
+    position: relative;
   }
   .para2{
     background-image: url(../img/index-para2.jpg);
   }
   .para3{
     background-image: url(../img/index-para3.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
   }
   .para4{
     background-image: url(../img/index-para4.jpg);
+    padding: 20px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
   }
-  .carousel{
 
-    .carousel-inner{
+  #index-readmore{
+    display: none;
 
-      .carousel-item, .carousel-item img {
-        height: auto;
-        max-height: 500px;
-
-        .carousel-caption{
-          p, h5, a{
-            color: $primary-text;
-          }
-        }
-      }
+  }
+  .index-animation{
+    position: relative;
+    background: linear-gradient(182deg, $silver, #e4e0e0);
+    background-size: 200% 200%;
+    
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:51% 0%}
+        50%{background-position:50% 100%}
+        100%{background-position:51% 0%}
     }
+    @-moz-keyframes AnimationName {
+        0%{background-position:51% 0%}
+        50%{background-position:50% 100%}
+        100%{background-position:51% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:51% 0%}
+        50%{background-position:50% 100%}
+        100%{background-position:51% 0%}
   }
 
   h2, h1, p{
     font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    margin: 0;
+    }
   }
+
   h1{
     font-weight: bold;
     text-transform: uppercase;
+    animation: animate 0.4s linear infinite;
+
   }
 
   h2{
     font-weight: bold;
     text-transform: uppercase;
+    animation: animate 0.4s linear infinite;
+
+  }
+  @keyframes animate 
+  {
+    0%, 100%
+    {
+      text-shadow: -1.5px -1.5px 0 $magenta, 1.5px
+               1.5px 0 $salmon;
+    }
+    25%{
+      text-shadow: 1.5px 1.5px 0 $magenta, -1.5px
+               -1.5px 0 $salmon;
+    }
+    50%{
+      text-shadow: 1.5px -1.5px 0 $magenta, -1.5px
+               1.5px 0 $salmon;
+    }
+    75%{
+      text-shadow: -1.5px 1.5px 0 $magenta, 1.5px
+               -1.5px 0 $salmon;
+    }
   }
 
   p{
@@ -198,31 +267,54 @@ footer{
     }
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   footer {
   padding: 30px;
   }
   .index{
+
     p{
       font-size: 2rem;
     }
     h2{
-      font-size: 3rem;
+      font-size: 4rem;
     }
     h1{
-    font-size: 5rem;
+    font-size: 6rem;
     }
     h2, h1, p{
       padding: 15px;
     }
+    #index-readmore{
+      display: block;
+      min-width: 150px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      padding: 15px;
+      border-radius: 40px;
+      animation: animate 0.4s linear infinite;
+      background-color: $magenta;
+    }
+    .para2{
+      height: 400px;
+    }
+    .para3{
+      height: 100vh;
+    }
     .para1{
     background-size: contain;
-    height: 450px;
+    background-position: center;
+    }
+    .para4{
+    height: 100vh;
+
     }
     .iframe-container{
       margin: auto;
       width: 80%;
       padding-bottom: 45%; 
   }
+}
 }
 @include album;

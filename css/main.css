@@ -8,6 +8,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background-color: #dcd4dc;
 }
@@ -155,9 +159,20 @@ footer a:hover {
   background-color: #bcb4bc;
 }
 
+.index a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
+
+.index a:hover {
+  text-transform: uppercase;
+  color: #fc7c74;
+}
+
 .index .para1, .index .para2, .index .para3, .index .para4 {
   position: relative;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -165,11 +180,15 @@ footer a:hover {
 
 .index .para1, .index .para2, .index .para3 {
   opacity: 0.7;
-  height: 400px;
+  height: 200px;
 }
 
 .index .para1 {
-  background-image: url(../img/index-para1.jpg);
+  background-color: white;
+  background-image: url(../img/index-para1-1.jpg);
+  width: 100%;
+  height: 75vh;
+  position: relative;
 }
 
 .index .para2 {
@@ -178,32 +197,118 @@ footer a:hover {
 
 .index .para3 {
   background-image: url(../img/index-para3.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
 }
 
 .index .para4 {
   background-image: url(../img/index-para4.jpg);
+  padding: 20px;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.index .carousel .carousel-inner .carousel-item, .index .carousel .carousel-inner .carousel-item img {
-  height: auto;
+.index #index-readmore {
+  display: none;
 }
 
-.index .carousel .carousel-inner .carousel-item .carousel-caption p, .index .carousel .carousel-inner .carousel-item .carousel-caption h5, .index .carousel .carousel-inner .carousel-item .carousel-caption a, .index .carousel .carousel-inner .carousel-item img .carousel-caption p, .index .carousel .carousel-inner .carousel-item img .carousel-caption h5, .index .carousel .carousel-inner .carousel-item img .carousel-caption a {
-  color: black;
+.index .index-animation {
+  position: relative;
+  background: linear-gradient(182deg, #bcb4bc, #e4e0e0);
+  background-size: 200% 200%;
+  -webkit-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
 }
 
-.index h2, .index h1, .index p {
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+
+.index .index-animation h2, .index .index-animation h1, .index .index-animation p {
   font-family: 'Oswald', sans-serif;
+  padding: 20px;
+  margin: 0;
 }
 
 .index h1 {
   font-weight: bold;
   text-transform: uppercase;
+  -webkit-animation: animate 0.4s linear infinite;
+          animation: animate 0.4s linear infinite;
 }
 
 .index h2 {
   font-weight: bold;
   text-transform: uppercase;
+  -webkit-animation: animate 0.4s linear infinite;
+          animation: animate 0.4s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    text-shadow: -1.5px -1.5px 0 #f70deb, 1.5px 1.5px 0 #fc7c74;
+  }
+  25% {
+    text-shadow: 1.5px 1.5px 0 #f70deb, -1.5px -1.5px 0 #fc7c74;
+  }
+  50% {
+    text-shadow: 1.5px -1.5px 0 #f70deb, -1.5px 1.5px 0 #fc7c74;
+  }
+  75% {
+    text-shadow: -1.5px 1.5px 0 #f70deb, 1.5px -1.5px 0 #fc7c74;
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    text-shadow: -1.5px -1.5px 0 #f70deb, 1.5px 1.5px 0 #fc7c74;
+  }
+  25% {
+    text-shadow: 1.5px 1.5px 0 #f70deb, -1.5px -1.5px 0 #fc7c74;
+  }
+  50% {
+    text-shadow: 1.5px -1.5px 0 #f70deb, -1.5px 1.5px 0 #fc7c74;
+  }
+  75% {
+    text-shadow: -1.5px 1.5px 0 #f70deb, 1.5px -1.5px 0 #fc7c74;
+  }
 }
 
 .index p {
@@ -213,9 +318,8 @@ footer a:hover {
 
 .index .iframe-container {
   position: relative;
-  margin: auto;
-  width: 80%;
-  padding-bottom: 45%;
+  width: 100%;
+  padding-bottom: 56.25%;
   height: 0;
 }
 
@@ -227,7 +331,7 @@ footer a:hover {
   height: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   footer {
     padding: 30px;
   }
@@ -235,17 +339,43 @@ footer a:hover {
     font-size: 2rem;
   }
   .index h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .index h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .index h2, .index h1, .index p {
     padding: 15px;
   }
+  .index #index-readmore {
+    display: block;
+    min-width: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 40px;
+    -webkit-animation: animate 0.4s linear infinite;
+            animation: animate 0.4s linear infinite;
+    background-color: #f70deb;
+  }
+  .index .para2 {
+    height: 400px;
+  }
+  .index .para3 {
+    height: 100vh;
+  }
   .index .para1 {
     background-size: contain;
-    height: 450px;
+    background-position: center;
+  }
+  .index .para4 {
+    height: 100vh;
+  }
+  .index .iframe-container {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 45%;
   }
 }
 
