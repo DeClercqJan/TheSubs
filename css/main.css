@@ -347,14 +347,13 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  width: 50%;
   margin-bottom: 10%;
 }
 .album .albums:nth-child(even) img {
   border-radius: 50%;
   order: 2;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 .album .albums:nth-child(even) .info-album {
   margin-right: 40px;
@@ -375,7 +374,6 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 50%;
   margin-bottom: 10%;
 }
 .album .albums:nth-child(odd) img {
