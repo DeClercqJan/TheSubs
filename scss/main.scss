@@ -1,7 +1,8 @@
 @import 'variable';
 @import 'album';
+@import 'contact';
 @import 'about';
-@import 'past-events';
+
 
 *{
     margin: 0;
@@ -335,3 +336,4 @@ footer{
   }
 }
 @include album;
+@include about;
