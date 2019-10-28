@@ -9,7 +9,8 @@
     }
 }
 
-.past-events {
+@mixin past-event {
+    .past-events {
         background-color: $silver;
 
         h1 {
@@ -55,3 +56,4 @@
                 }
             }
         }
+}

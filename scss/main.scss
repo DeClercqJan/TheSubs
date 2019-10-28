@@ -2,6 +2,7 @@
 @import 'album';
 @import 'contact';
 @import 'about';
+@import 'past-events';
 
 
 *{
@@ -336,4 +337,6 @@ footer{
   }
 }
 @include album;
+@include past-event;
 @include about;
+@include contact;
