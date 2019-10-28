@@ -1,63 +1,3 @@
-.past-events {
-  background-color: #bcb4bc;
-}
-.past-events h1 {
-  text-align: center;
-}
-.past-events .past-events-parallax-text {
-  background-color: #bcb4bc;
-}
-.past-events .past-events-parallax-1 {
-  /* The image used */
-  background-image: url("../img/pukkelpop.jpg");
-  height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.past-events .past-events-parallax-2 {
-  /* The image used */
-  background-image: url("../img/AB-mei-2019.jpg");
-  height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.past-events .past-events-parallax-3 {
-  /* The image used */
-  background-image: url("../img/werchter.jpg");
-  height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .past-events .past-events-parallax-text p {
-    display: block;
-  }
-  .past-events .past-events-parallax-text button {
-    display: none;
-  }
-  .past-events .past-events-parallax-text .past-events-parallax-1 {
-    /* The image used */
-    background-image: url("../img/pukkelpop-mobile.jpg");
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -225,14 +165,14 @@ footer a:hover {
 
 .index .para1, .index .para2, .index .para3, .index .para4 {
   position: relative;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .index .para1 {
-  background-image: url(../img/para1-bg);
+  background-image: url(../img/index-para1.jpg);
   width: 100%;
   height: 100vh;
 }
