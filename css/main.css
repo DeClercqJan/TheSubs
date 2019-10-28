@@ -39,8 +39,23 @@
 }
 
 @media screen and (min-width: 768px) {
-  .past-events .past-events-parallax-text p a {
+  .past-events .past-events-parallax-text p {
+    display: block;
+  }
+  .past-events .past-events-parallax-text button {
     display: none;
+  }
+  .past-events .past-events-parallax-text .past-events-parallax-1 {
+    /* The image used */
+    background-image: url("../img/pukkelpop-mobile.jpg");
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 * {
