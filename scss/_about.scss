@@ -13,16 +13,14 @@
 }
 @mixin about {
     .about {
-        
+   
      .container-fluid{
         display: grid;
         width: 80%;
         row-gap: 100px;
         column-gap: 50px;
         justify-self: center;
-        
-        
-       
+            
         }
        
     

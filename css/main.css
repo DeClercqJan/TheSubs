@@ -249,6 +249,11 @@ footer a:hover {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .about {
+    .about-parallax-splay: display;
+  }
+}
 .about .container-fluid {
   display: grid;
   width: 80%;
