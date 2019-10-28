@@ -11,27 +11,39 @@
         
     }
 }
-@mixin aboutme {
+@mixin about {
     .about {
-       
-    .parallax-1 {
-        /* The image used */
-        background-image: url("/img/parallax.jpg");
         
-        @include parallax-effect;
+     .container-fluid{
+        display: grid;
+        width: 80%;
+        row-gap: 100px;
+        column-gap: 50px;
+        justify-self: center;
+        
+        
+       
+        }
+       
+    
+    .about-parallax-1 {
+        /* The image used */
+        background-image: url("/img/parallax-1.jpg");
+        
+     @include parallax-effect;
         }
 
-    .parallax-2 {
+    .about-parallax-2 {
             /* The image used */
             background-image: url("/img/parallax-2.jpg");
             
-            @include parallax-effect;
+         @include parallax-effect;
           }
-    .parallax-3 {
+    .about-parallax-3 {
             /* The image used */
             background-image: url("/img/parallax-3.jpg");
            
-            @include parallax-effect;
+           @include parallax-effect;
           }
     }
 }
