@@ -21,7 +21,7 @@
   
     .past-events-parallax-1 {
       /* The image used */
-      background-image: url("../img/pukkelpop.jpg");
+      background-image: url("../img/pukkelpop-mobile.jpg");
       height: 400px;
   
       @include past-events-parallax-effect;
@@ -53,16 +53,10 @@
         button {
           display: none;
         }
-  
+      }
         .past-events-parallax-1 {
           /* The image used */
-          background-image: url("../img/pukkelpop-mobile.jpg");
-          height: 400px;
-          display: flex;
-          justify-content: center;
-  
-          @include past-events-parallax-effect;
-        }
+          background-image: url("../img/pukkelpop.jpg");
+          }
       }
     }
-  }
