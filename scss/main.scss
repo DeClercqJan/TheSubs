@@ -179,7 +179,12 @@ footer{
 
   #index-readmore{
     display: none;
+  }
 
+  #index-read-even-more{
+    padding: 15px;
+    border-radius: 40px;
+    animation: animate 0.4s linear infinite;
   }
 
   .index-animation{

@@ -274,6 +274,13 @@ footer a:hover {
   display: none;
 }
 
+.index #index-read-even-more {
+  padding: 15px;
+  border-radius: 40px;
+  -webkit-animation: animate 0.4s linear infinite;
+          animation: animate 0.4s linear infinite;
+}
+
 .index .index-animation {
   position: relative;
   background: linear-gradient(182deg, #bcb4bc, #e4e0e0);
