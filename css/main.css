@@ -382,12 +382,10 @@ footer a:hover {
     font-size: 1.5em;
   }
   footer a {
-    padding: 10px;
-    padding-bottom: 0;
+    padding: 0 10px;
   }
   footer i {
-    padding: 5px;
-    padding-bottom: 0;
+    padding: 0 5px;
   }
   footer #footer-social-border {
     max-width: 600px;
