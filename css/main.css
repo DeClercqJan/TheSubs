@@ -48,14 +48,6 @@
   .past-events .past-events-parallax-text .past-events-parallax-1 {
     /* The image used */
     background-image: url("../img/pukkelpop-mobile.jpg");
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 * {
