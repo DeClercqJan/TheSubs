@@ -9,6 +9,8 @@
     font-size: 1em;
     font-family: inherit;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
   }
 
  html{
@@ -21,7 +23,6 @@ nav {
     .img-wrapper {
       span {
         font-size: 1.5em;
-        font-family: 'Oswald', sans-serif;
       }
     }
 }
@@ -55,15 +56,12 @@ header{
     border: 1px solid gray;
     padding: 10px;
     border-radius: 10px;
-    background-color: green !important;
+    background-color:$dark-gray !important;
     width: 250px;
     margin-bottom: 20px;
   
     &:hover {
-      background-color: darkgreen !important;
-    }
-    &:active {
-      background-color: greenyellow !important;
+      background-color: $magenta !important;
     }
   }
   .menu {
@@ -306,6 +304,9 @@ footer{
     }
   }
 }
+<<<<<<< HEAD
+@include album;
+=======
 @media only screen and (min-width: 1024px){
   .index{
     #index-readmore{
@@ -323,3 +324,4 @@ footer{
 
 @include aboutme;
 
+>>>>>>> 5cfd3e9fd4db81d82b9cca465645f7007a63d4f3
