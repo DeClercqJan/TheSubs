@@ -5,6 +5,7 @@
   font-size: 1em;
   font-family: inherit;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 nav {
@@ -12,7 +13,6 @@ nav {
 }
 nav .img-wrapper span {
   font-size: 1.5em;
-  font-family: "Oswald", sans-serif;
 }
 
 header {
@@ -40,15 +40,12 @@ header a {
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
-  background-color: green !important;
+  background-color: #ababab !important;
   width: 250px;
   margin-bottom: 20px;
 }
 header a:hover {
-  background-color: darkgreen !important;
-}
-header a:active {
-  background-color: greenyellow !important;
+  background-color: #f70deb !important;
 }
 header .menu {
   display: flex;
@@ -185,11 +182,11 @@ footer a:hover {
 .album .albums:nth-child(even) img {
   border-radius: 50%;
   order: 2;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
 }
 .album .albums:nth-child(even) .info-album {
-  margin-left: 20px;
+  margin-right: 40px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -197,10 +194,11 @@ footer a:hover {
 }
 .album .albums:nth-child(even) .info-album hr {
   background-color: black;
-  width: 60%;
+  width: 90%;
 }
 .album .albums:nth-child(even) .info-album p {
   text-align: center;
+  font-size: 1em;
 }
 .album .albums:nth-child(odd) {
   display: flex;
@@ -211,11 +209,11 @@ footer a:hover {
 }
 .album .albums:nth-child(odd) img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
 }
 .album .albums:nth-child(odd) .info-album {
-  margin-left: 20px;
+  margin-left: 40px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -223,57 +221,54 @@ footer a:hover {
 }
 .album .albums:nth-child(odd) .info-album hr {
   background-color: black;
-  width: 60%;
+  width: 90%;
 }
 .album .albums:nth-child(odd) .info-album p {
   text-align: center;
+  font-size: 1em;
 }
-@media (max-width: 750px) {
-  .album main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-  }
+@media screen and (max-width: 992px) {
   .album .albums:nth-child(even) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    width: 100% !important;
+    width: 85%;
     margin-bottom: 10%;
   }
   .album .albums:nth-child(even) img {
     border-radius: 50%;
     order: 2;
     width: 250px;
-    height: 250px;
+    height: auto;
   }
   .album .albums:nth-child(even) .info-album {
-    width: 100% !important;
+    margin-right: 0px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .album .albums:nth-child(even) .info-album hr {
     background-color: black;
-    width: 60%;
   }
   .album .albums:nth-child(even) .info-album p {
     text-align: center;
+    font-size: 1em;
   }
   .album .albums:nth-child(odd) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 85%;
     margin-bottom: 10%;
   }
   .album .albums:nth-child(odd) img {
     border-radius: 50%;
     width: 250px;
-    height: 250px;
+    height: auto;
   }
   .album .albums:nth-child(odd) .info-album {
+    margin-left: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -281,10 +276,10 @@ footer a:hover {
   }
   .album .albums:nth-child(odd) .info-album hr {
     background-color: black;
-    width: 60%;
   }
   .album .albums:nth-child(odd) .info-album p {
     text-align: center;
+    font-size: 1em;
   }
 }
 

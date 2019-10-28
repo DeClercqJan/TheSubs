@@ -10,6 +10,8 @@
     font-size: 1em;
     font-family: inherit;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
   }
 
  
@@ -20,7 +22,6 @@ nav {
     .img-wrapper {
       span {
         font-size: 1.5em;
-        font-family: 'Oswald', sans-serif;
       }
     }
 }
@@ -54,15 +55,12 @@ header{
     border: 1px solid gray;
     padding: 10px;
     border-radius: 10px;
-    background-color: green !important;
+    background-color:$dark-gray !important;
     width: 250px;
     margin-bottom: 20px;
   
     &:hover {
-      background-color: darkgreen !important;
-    }
-    &:active {
-      background-color: greenyellow !important;
+      background-color: $magenta !important;
     }
   }
   .menu {
