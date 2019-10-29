@@ -185,19 +185,19 @@ footer{
     padding: 15px;
     border-radius: 40px;
     font-size: 3em;
-    animation: animate 0.4s linear infinite;
+    animation: animate 1s ease-in-out infinite;
   }
 
   #index-read-even-more{
     padding: 15px;
     padding-bottom: 40px;
     border-radius: 40px;
-    animation: animate 0.4s linear infinite;
+    animation: animate 1s ease-in-out infinite;
   }
 
   .index-animation{
     position: relative;
-    background: linear-gradient(182deg, $silver, #dbd6d6);
+    background: linear-gradientu(182deg, $silver, #dbd6d6);
     background-size: 200% 200%;
     padding-bottom: 50px;
     
