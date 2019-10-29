@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .about main .about-parallax-1, .about main .about-parallax-3, .about main .about-parallax-3 {
+  .about main .about-parallax-1, .about main .about-parallax-2, .about main .about-parallax-3 {
     max-height: 300px;
   }
   .about main section {
