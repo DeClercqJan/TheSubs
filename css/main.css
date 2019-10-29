@@ -1,12 +1,17 @@
 .past-events {
-  background-color: #bcb4bc;
+  background-color: #fbfbfb;
 }
 .past-events h1 {
   text-align: center;
   animation: animate 0.7s ease-in-out infinite;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .past-events .past-events-parallax-text {
   background-color: #bcb4bc;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 .past-events .past-events-parallax-1 {
   /* The image used */
