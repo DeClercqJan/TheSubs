@@ -4,11 +4,12 @@
 
 This is the upgraded version of the website of the Belgian band The Subs.
 
-It is designed by.
-    1. Jeroen
-    2. Tibo
-    3. Jan
-    4. Shadia
+It is designed by:
+
+    1. Jeroen: Git God/ Albums Page 
+    2. Tibo: Main Page/ Readme
+    3. Jan: Past Events Page
+    4. Shadia: About Us/ Contact Us
 
 ## Contents
 
@@ -18,16 +19,16 @@ This repo consists of the source code for the entire website, INCLUDING the SCSS
 
 TheSubs
 
-    .- index.html
+    - index.html
 
-    .- README.md
+    - README.md
 
-    .- pages
+    - pages
 
-    .- img
+    - img
 
-    .- css
+    - css
 
-    .- scss
+    - scss
 
 ![funny gif](https://media0.giphy.com/media/5GoVLqeAOo6PK/giphy.gif).
