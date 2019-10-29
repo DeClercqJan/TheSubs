@@ -30,7 +30,7 @@
 
   .past-events-parallax-1 {
     /* The image used */
-    background-image: url("../img/pukkelpop-mobile.jpg");
+    background-image: url("/TheSubs/img/pukkelpop-mobile.jpg");
     height: 400px;
 
     @include past-events-parallax-effect;
@@ -38,7 +38,7 @@
 
   .past-events-parallax-2 {
     /* The image used */
-    background-image: url("../img/AB-mei-2019.jpg");
+    background-image: url("/TheSubs/img/AB-mei-2019.jpg");
     height: 400px;
 
     @include past-events-parallax-effect;
@@ -46,7 +46,7 @@
 
   .past-events-parallax-3 {
     /* The image used */
-    background-image: url("../img/werchter.jpg");
+    background-image: url("/TheSubs/img/werchter.jpg");
     height: 400px;
 
     @include past-events-parallax-effect;
@@ -69,7 +69,7 @@
     }
       .past-events-parallax-1 {
         /* The image used */
-        background-image: url("../img/pukkelpop.jpg");
+        background-image: url("/TheSubs/img/pukkelpop.jpg");
         }
     }
   }

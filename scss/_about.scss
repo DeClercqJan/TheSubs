@@ -48,20 +48,20 @@
 
     .about-parallax-1 {
       /* The image used */
-      background-image: url("/img/parallax-1.jpg");
+      background-image: url("/TheSubs/img/parallax-1.jpg");
 
       @include parallax-effect;
     }
 
     .about-parallax-2 {
       /* The image used */
-      background-image: url("/img/parallax-2.jpg");
+      background-image: url("/TheSubs/img/parallax-2.jpg");
 
       @include parallax-effect;
     }
     .about-parallax-3 {
       /* The image used */
-      background-image: url("/img/parallax-3.jpg");
+      background-image: url("/TheSubs/img/parallax-3.jpg");
 
       @include parallax-effect;
     }
