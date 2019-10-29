@@ -71,6 +71,33 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .about main .about-parallax-1, .about main .about-parallax-3, .about main .about-parallax-3 {
+    max-height: 300px;
+  }
+  .about main section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about main img {
+    margin-top: 5%;
+  }
+  .about main #about-wiebe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -685,17 +712,23 @@ footer a:hover {
   }
 }
 
-.about main main {
+.about main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 5%;
+  text-align: center;
+}
+
+.about main main {
+  padding: 5%;
 }
 
 .about main main h1 {
@@ -703,26 +736,22 @@ footer a:hover {
           animation: animate 1s ease-in-out infinite;
 }
 
-.about main main * {
-  margin: 2%;
-}
-
-.about main .about-who {
+.about .about-who {
   text-align: center;
 }
 
-.about main img {
+.about img {
   border-radius: 50%;
 }
 
-.about main #about-header {
+.about #about-header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.about .about-parallax-1 {
+.about-parallax-1 {
   /* The image used */
   background-image: url("/TheSubs/img/parallax-1.jpg");
   height: 500px;
@@ -733,7 +762,7 @@ footer a:hover {
   background-size: cover;
 }
 
-.about .about-parallax-2 {
+.about-parallax-2 {
   /* The image used */
   background-image: url("/TheSubs/img/parallax-2.jpg");
   height: 500px;
@@ -744,7 +773,7 @@ footer a:hover {
   background-size: cover;
 }
 
-.about .about-parallax-3 {
+.about-parallax-3 {
   /* The image used */
   background-image: url("/TheSubs/img/parallax-3.jpg");
   height: 500px;
@@ -753,30 +782,6 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (max-width: 992px) {
-  .about main .about-parallax-1, .about main .about-parallax-3, .about main .about-parallax-3 {
-    max-height: 300px;
-  }
-  .about main section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about main #about-wiebe {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
 }
 
 .contact main {

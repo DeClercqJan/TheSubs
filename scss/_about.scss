@@ -2,7 +2,7 @@
   height: 500px;
 
   /* Create the parallax scrolling effect */
-    background: {
+  background: {
     attachment: fixed;
     position: center;
     repeat: no-repeat;
@@ -11,59 +11,51 @@
 }
 @mixin about {
   .about {
-   
     main {
-     
       main {
-       h1{
-        animation: animate 1s ease-in-out infinite;
-       }
-        *{
-          margin: 2%;
-        
+        h1 {
+          animation: animate 1s ease-in-out infinite;
         }
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-       
+        padding: 5%;
       }
-     
-      .about-who{
-        text-align: center;
-        
-      }
-      img{
-       border-radius: 50%;
-      }
-      #about-header{
-        flex-direction: column;
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5%;
+      text-align: center;
     }
 
-   
-    
-
-    .about-parallax-1 {
-      /* The image used */
-      background-image: url("/TheSubs/img/parallax-1.jpg");
-
-      @include parallax-effect;
+    .about-who {
+      text-align: center;
     }
-
-    .about-parallax-2 {
-      /* The image used */
-      background-image: url("/TheSubs/img/parallax-2.jpg");
-
-      @include parallax-effect;
+    img {
+      border-radius: 50%;
     }
-    .about-parallax-3 {
-      /* The image used */
-      background-image: url("/TheSubs/img/parallax-3.jpg");
-
-      @include parallax-effect;
+    #about-header {
+      flex-direction: column;
     }
   }
+
+  .about-parallax-1 {
+    /* The image used */
+    background-image: url("/TheSubs/img/parallax-1.jpg");
+
+    @include parallax-effect;
+  }
+
+  .about-parallax-2 {
+    /* The image used */
+    background-image: url("/TheSubs/img/parallax-2.jpg");
+
+    @include parallax-effect;
+  }
+  .about-parallax-3 {
+    /* The image used */
+    background-image: url("/TheSubs/img/parallax-3.jpg");
+
+    @include parallax-effect;
+  }
+}
 
   @media screen and (max-width: 992px) {
     .about {
@@ -76,14 +68,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
       }
-      #about-wiebe{
+      img{
+        margin-top:5% ;
+      }
+      #about-wiebe {
         flex-direction: column-reverse;
       }
-    
-      
     }
   }
-}
 }
