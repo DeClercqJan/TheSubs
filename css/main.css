@@ -543,8 +543,7 @@ footer a:hover {
     flex-direction: column-reverse;
   }
 }
-.contact main .contact-iframe {
-  display: flex;
+.contact main {
   width: 100%;
 }
 .contact main input:hover {
@@ -554,37 +553,35 @@ footer a:hover {
 }
 .contact main .contact-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.contact main .contact-form .contact-fieldset {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  background-color: violet;
+  width: 100%;
   text-align: center;
   padding: 5%;
 }
-.contact main .contact-form .contact-fieldset * {
-  padding: 2%;
+.contact main .contact-form * {
+  padding: 1%;
+}
+.contact main .contact-form div {
+  width: 100%;
+}
+.contact main .contact-form div input {
+  width: 30%;
+}
+.contact main .contact-form div textarea {
   width: 50%;
 }
-.contact main .contact-form .contact-fieldset label {
+.contact main .contact-form label {
   animation: animate 0.7s ease-in-out infinite;
 }
-.contact main .contact-form .contact-fieldset input {
-  width: 100%;
+.contact main .contact-iframe {
+  display: flex;
+  border: hidden;
+  justify-content: center;
 }
-.contact main .contact-form .contact-fieldset textarea {
-  width: 100%;
+.contact main .contact-iframe iframe {
+  width: 50%;
+  margin-bottom: 5px;
 }
-
-/*  @media screen and (max-width: 992px) {
-      .contact {
-        main {
-
-        }
-  }
-}
-    */
 
 /*# sourceMappingURL=main.css.map */

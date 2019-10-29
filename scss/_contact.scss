@@ -2,69 +2,62 @@
     .contact {
      
       main{
-        
-      
-        .contact-iframe{
-         display: flex;
-         width: 100%;
-        }
-      
+       
+      width: 100%;
       input:hover {
         font-weight: bold;
         text-decoration: none;
         color: $magenta;
         }
 
-      .contact-form{
         
-       
-       
-        display: flex;
-         
-         justify-content: center;
-         .contact-fieldset{
+       .contact-form{
           
           display: flex;
+         flex-direction: column;
           justify-content: center;
-          width: 50%;
-          background-color: violet;
+          width: 100%;
+          
          
           text-align: center;
           padding: 5%;
           *{
-           
-            padding: 2%;
-            width: 50%;
+            padding: 1%;
             
-           
           }
+         div{
+           width: 100%;
+           input{
+             width: 30%;
+           }
+           textarea{
+             width: 50%;
+           }
+         }
+          
           label{
             animation: animate 0.7s ease-in-out infinite;
-            
+           
           }
-          input{
-            width:100%;
+         
           }
-          textarea{
-            width: 100%;
+           
+        .contact-iframe{
+         
+         display: flex;
+         border: hidden;
+          justify-content: center;
+          iframe{
+            width: 50%;
+            margin-bottom: 5px;
           }
-          
-          }
-          
+        }
           }
           
      
       }
     }
    
-  /*  @media screen and (max-width: 992px) {
-      .contact {
-        main {
-          
-        }
-  }
-}
-    */
-
-    }
+ 
+    
   
