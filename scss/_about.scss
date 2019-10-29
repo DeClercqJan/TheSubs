@@ -68,6 +68,9 @@
   @media screen and (max-width: 992px) {
     .about {
       main {
+        .about-parallax-1, .about-parallax-3, .about-parallax-3{
+          max-height: 300px;
+        }
       
       section {
         display: flex;
