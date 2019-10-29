@@ -9,64 +9,65 @@
     size: cover;
   }
 }
+
   main {
-    * {
-      margin: 2%;
-    }
+    
+    padding: 2%;
+  
+  display: flex;
+
+  flex-direction: column;
+  text-align: justify;
+  text-align: center;
+  section {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    flex-direction: column;
-    text-align: justify;
+  .about-who {
     text-align: center;
-    section {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    .about-who {
-      text-align: center;
-    }
-    img {
-      border-radius: 50%;
-    }
-    #about-header {
-      flex-direction: column;
-    }
   }
-
-  .about-parallax-1 {
-    /* The image used */
-    background-image: url("/img/index-para1.jpg");
-
-    @include parallax-effect;
+  img {
+    border-radius: 50%;
   }
-
-  .about-parallax-2 {
-    /* The image used */
-    background-image: url("/img/parallax-2.jpg");
-
-    @include parallax-effect;
+  #about-header {
+    flex-direction: column;
   }
-  .about-parallax-3 {
-    /* The image used */
-    background-image: url("/img/parallax-3.jpg");
+}
 
-    @include parallax-effect;
-  }
+.about-parallax-1 {
+  /* The image used */
+  background-image: url("/img/index-para1.jpg");
+
+  @include parallax-effect;
+}
+
+.about-parallax-2 {
+  /* The image used */
+  background-image: url("/img/parallax-2.jpg");
+
+  @include parallax-effect;
+}
+.about-parallax-3 {
+  /* The image used */
+  background-image: url("/img/parallax-3.jpg");
+
+  @include parallax-effect;
+}
 
 
 @media screen and (max-width: 992px) {
-  .about {
-    main {
-      section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      #about-wiebe {
-        flex-direction: column-reverse;
-      }
+.about {
+  main {
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #about-wiebe {
+      flex-direction: column-reverse;
     }
   }
+}
 }

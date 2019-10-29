@@ -8,57 +8,56 @@
     }
   }
   
- @mixin past-event {
-  .past-events {
-  
-    h1 {
-      text-align: center;
-    }
-  
-    .past-events-parallax-text {
-      background-color: $silver;
-    }
-  
-    .past-events-parallax-1 {
-      /* The image used */
-      background-image: url("/img/pukkelpop-mobile.jpg");
-      height: 400px;
-  
-      @include parallax-effect;
-    }
-  
-    .past-events-parallax-2 {
-      /* The image used */
-      background-image: url("/img/AB-mei-2019.jpg");
-      height: 400px;
-  
-      @include parallax-effect;
-    }
-  
-    .past-events-parallax-3 {
-      /* The image used */
-      background-image: url("/img/werchter.jpg");
-      height: 400px;
-  
-      @include parallax-effect;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
+  @mixin past-event {
     .past-events {
-      .past-events-parallax-text {
-        p {
-          display: block;
-        }
-        button {
-          display: none;
-        }
+  
+      h1 {
+        text-align: center;
       }
-        .past-events-parallax-1 {
-          /* The image used */
-          background-image: url("../img/pukkelpop.jpg");
-          }
+    
+      .past-events-parallax-text {
+        background-color: $silver;
+      }
+    
+      .past-events-parallax-1 {
+        /* The image used */
+        background-image: url("/img/pukkelpop-mobile.jpg");
+        height: 400px;
+    
+        @include parallax-effect;
+      }
+    
+      .past-events-parallax-2 {
+        /* The image used */
+        background-image: url("/img/AB-mei-2019.jpg");
+        height: 400px;
+    
+        @include parallax-effect;
+      }
+    
+      .past-events-parallax-3 {
+        /* The image used */
+        background-image: url("/img/werchter.jpg");
+        height: 400px;
+    
+        @include parallax-effect;
       }
     }
-
- }
+    
+    @media screen and (min-width: 768px) {
+      .past-events {
+        .past-events-parallax-text {
+          p {
+            display: block;
+          }
+          button {
+            display: none;
+          }
+        }
+          .past-events-parallax-1 {
+            /* The image used */
+            background-image: url("../img/pukkelpop.jpg");
+            }
+        }
+      }
+  }
