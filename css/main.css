@@ -68,6 +68,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .about main img {
+    margin-top: 5%;
+  }
   .about main #about-wiebe {
     flex-direction: column-reverse;
   }
@@ -509,6 +512,7 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   padding: 5%;
+  text-align: center;
 }
 .about main main {
   padding: 5%;
