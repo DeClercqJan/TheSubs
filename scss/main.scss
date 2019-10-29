@@ -1,12 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  font-family: inherit;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
-}
+@import 'variable';
+@import 'album';
+@import 'contact';
+@import 'about';
+@import 'past-events';
 
 html {
   scroll-behavior: smooth;
@@ -741,4 +737,7 @@ footer a:hover {
     background-size: cover;
   }
 }
-/*# sourceMappingURL=main.css.map */
+@include album;
+@include past-event;
+@include about;
+@include contact;

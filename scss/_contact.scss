@@ -1,7 +1,28 @@
-@mixin about {
-    
-    .about {
+@mixin contact {
+    .contact {
+      background-color: rgb(52, 25, 126);
+      
+      *{
+        padding: 5%;
         
-    }
+      }  
+      display: flex;
+     
+       justify-content: center; 
+      input:hover{
+        font-weight: bold;
+        text-decoration: none;
+        color: $magenta;
+        }
 
-}
+      form{
+        fieldset{
+          display: flex;
+          
+      }
+      }
+    }
+  }
+
+  
+      
