@@ -292,16 +292,14 @@ footer a:hover {
   padding: 15px;
   border-radius: 40px;
   font-size: 3em;
-  -webkit-animation: animate 1s ease-in-out infinite;
-          animation: animate 1s ease-in-out infinite;
+  animation: animate 1s ease-in-out infinite;
 }
 
 .index #index-read-even-more {
   padding: 15px;
   padding-bottom: 40px;
   border-radius: 40px;
-  -webkit-animation: animate 1s ease-in-out infinite;
-          animation: animate 1s ease-in-out infinite;
+  animation: animate 1s ease-in-out infinite;
 }
 
 .index .index-animation {
@@ -346,8 +344,7 @@ footer a:hover {
 .index h1 {
   font-weight: bold;
   text-transform: uppercase;
-  -webkit-animation: animate 0.4s linear infinite;
-          animation: animate 0.4s linear infinite;
+  animation: animate 1s ease-in-out infinite;
   padding: 70px 0;
   font-size: 5em;
 }
@@ -355,23 +352,7 @@ footer a:hover {
 .index h2 {
   font-weight: bold;
   text-transform: uppercase;
-  -webkit-animation: animate 0.4s linear infinite;
-          animation: animate 0.4s linear infinite;
-}
-
-@-webkit-keyframes animate {
-  0%, 100% {
-    text-shadow: -2px -2px 0 #f70deb, 2px 2px 0 #0ff;
-  }
-  25% {
-    text-shadow: 2px 2px 0 #f70deb, -2px -2px 0 #0ff;
-  }
-  50% {
-    text-shadow: 2px -2px 0 #f70deb, -2px 2px 0 #0ff;
-  }
-  75% {
-    text-shadow: -2px 2px 0 #f70deb, 2px -2px 0 #0ff;
-  }
+  animation: animate 1s ease-in-out infinite;
 }
 
 @keyframes animate {
@@ -379,7 +360,8 @@ footer a:hover {
     text-shadow: -2px -2px 0 #f70deb, 2px 2px 0 #0ff;
   }
   25% {
-    text-shadow: 2px 2px 0 #f70deb, -2px -2px 0 #0ff;
+    text-shadow: 2px 2px 0 #f70deb, -2    padding: 20px;
+    px -2px 0 #0ff;
   }
   50% {
     text-shadow: 2px -2px 0 #f70deb, -2px 2px 0 #0ff;

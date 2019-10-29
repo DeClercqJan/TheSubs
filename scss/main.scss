@@ -201,10 +201,9 @@ footer{
     background-size: 200% 200%;
     padding-bottom: 50px;
     
-    -webkit-animation: AnimationName 4s ease infinite;
-    -moz-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite;
-    
+    -webkit-animation: AnimationName 1s ease-in-out infinite;
+    -moz-animation: AnimationName 1s ease-in-out infinite;
+    animation: AnimationName 1s ease-in-out infinite;
     @-webkit-keyframes AnimationName {
         0%{background-position:51% 0%}
         50%{background-position:50% 100%}
@@ -231,7 +230,7 @@ footer{
   h1{
     font-weight: bold;
     text-transform: uppercase;
-    animation: animate 0.4s linear infinite;
+    animation: animate 1s ease-in-out infinite;
     padding: 70px 0;
     font-size: 5em;
 
@@ -240,7 +239,7 @@ footer{
   h2{
     font-weight: bold;
     text-transform: uppercase;
-    animation: animate 0.4s linear infinite;
+    animation: animate 1s ease-in-out infinite;
 
   }
 
