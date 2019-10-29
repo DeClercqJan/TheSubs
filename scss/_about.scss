@@ -29,6 +29,7 @@
     }
     img {
       border-radius: 50%;
+      margin: 10px;
     }
     #about-header {
       flex-direction: column;
@@ -64,14 +65,15 @@
           max-height: 300px;
         }
       
-      section {
+      section{
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
         padding: 20px;
-      }
-      img{
-        margin-top:5% ;
+
+        about-text{
+          max-width: 70%;
+        }
       }
       #about-wiebe {
         flex-direction: column-reverse;
