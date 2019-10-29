@@ -587,12 +587,12 @@ footer a:hover {
 }
 
 .album .albums:nth-child(even) .info-album h2 {
-  -webkit-animation: animate 0.7s ease-in-out infinite;
-          animation: animate 0.7s ease-in-out infinite;
+  -webkit-animation: animate 1s ease-in-out infinite;
+          animation: animate 1s ease-in-out infinite;
 }
 .album .albums:nth-child(odd) .info-album h2 {
-  -webkit-animation: animate 0.7s ease-in-out infinite;
-          animation: animate 0.7s ease-in-out infinite;
+  -webkit-animation: animate 1s ease-in-out infinite;
+          animation: animate 1s ease-in-out infinite;
 }
 .album .albums:nth-child(even) .info-album p {
   text-align: center;
