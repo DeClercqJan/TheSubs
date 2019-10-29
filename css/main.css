@@ -12,6 +12,11 @@
   padding-bottom: 2rem;
 }
 
+.past-events h2 {
+  -webkit-animation: animate 0.7s ease-in-out infinite;
+          animation: animate 0.7s ease-in-out infinite;
+}
+
 .past-events .past-events-parallax-text {
   border: 1px solid red;
   background-color: #bcb4bc;
@@ -515,7 +520,7 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-#title h1 {
+#title h1, #title h2 {
   margin-top: 20px;
   -webkit-animation: animate 1s ease-in-out infinite;
           animation: animate 1s ease-in-out infinite;

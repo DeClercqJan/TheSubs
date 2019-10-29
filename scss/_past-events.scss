@@ -19,6 +19,9 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  h2{
+    animation: animate 0.7s ease-in-out infinite;
+  }
 
   .past-events-parallax-text {
     border: 1px solid red;
