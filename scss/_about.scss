@@ -69,6 +69,10 @@
         flex-direction: column !important;
         align-items: center;
         padding: 20px;
+
+        about-text{
+          max-width: 70%;
+        }
       }
       img{
         margin: 10px;
