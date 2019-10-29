@@ -1,36 +1,63 @@
-.past-events {
-  background-color: #bcb4bc;
+#title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  grid-column-start: 2;
+  margin-bottom: 20px;
 }
-.past-events h1 {
+#title h1 {
+  margin-top: 20px;
+}
+#title hr {
+  background-color: black;
+  width: 90%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+main * {
+  margin: 0px !important;
+}
+main section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+}
+main section p {
+  margin-top: 10px;
+}
+main section .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .about-who {
   text-align: center;
 }
-.past-events .past-events-parallax-text {
-  background-color: #bcb4bc;
+main .album-img {
+  margin-top: 20%;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 20%;
+  border-radius: 30%;
+  height: 200px;
 }
-.past-events .past-events-parallax-1 {
-  /* The image used */
-  background-image: url("../img/pukkelpop-mobile.jpg");
-  height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+main #about-header {
+  flex-direction: column;
 }
-.past-events .past-events-parallax-2 {
+
+.ablum-parallax-1 {
   /* The image used */
-  background-image: url("../img/AB-mei-2019.jpg");
-  height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.past-events .past-events-parallax-3 {
-  /* The image used */
-  background-image: url("../img/werchter.jpg");
-  height: 400px;
+  background-image: url("/img/swag.jpg");
+  height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -38,16 +65,111 @@
   background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
-  .past-events .past-events-parallax-text p {
-    display: block;
+.album-parallax-2 {
+  /* The image used */
+  background-image: url("/img/stagr.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.album-parallax-3 {
+  /* The image used */
+  background-image: url("/img/the-face-of-the-planet.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.album-parallax-4 {
+  /* The image used */
+  background-image: url("/img/Pope-of-dope.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .past-events .past-events-parallax-text button {
-    display: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  text-align: center;
+}
+main * {
+  margin: 2%;
+}
+main section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .about-who {
+  text-align: center;
+}
+main img {
+  border-radius: 50%;
+}
+main #about-header {
+  flex-direction: column;
+}
+
+.about-parallax-1 {
+  /* The image used */
+  background-image: url("/img/index-para1.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-parallax-2 {
+  /* The image used */
+  background-image: url("/img/parallax-2.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-parallax-3 {
+  /* The image used */
+  background-image: url("/img/parallax-3.jpg");
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .about main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .past-events .past-events-parallax-1 {
-    /* The image used */
-    background-image: url("../img/pukkelpop.jpg");
+  .about main #about-wiebe {
+    flex-direction: column-reverse;
   }
 }
 * {
@@ -350,184 +472,36 @@ footer a:hover {
     padding-bottom: 45%;
   }
 }
-#title {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  grid-column-start: 2;
-  margin-bottom: 20px;
-}
-#title h1 {
-  margin-top: 20px;
-}
-#title hr {
-  background-color: black;
-  width: 90%;
-}
-
-.album main {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-}
-.album .albums:nth-child(even) {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap-reverse;
-  margin-bottom: 10%;
-}
-.album .albums:nth-child(even) img {
-  border-radius: 50%;
-  order: 2;
-  width: 250px;
-  height: 250px;
-}
-.album .albums:nth-child(even) .info-album {
-  margin-right: 40px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.album .albums:nth-child(even) .info-album hr {
-  background-color: black;
-  width: 90%;
-}
-.album .albums:nth-child(even) .info-album p {
-  text-align: center;
-  font-size: 1em;
-}
-.album .albums:nth-child(odd) {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 10%;
-}
-.album .albums:nth-child(odd) img {
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-.album .albums:nth-child(odd) .info-album {
-  margin-left: 40px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.album .albums:nth-child(odd) .info-album hr {
-  background-color: black;
-  width: 90%;
-}
-.album .albums:nth-child(odd) .info-album p {
-  text-align: center;
-  font-size: 1em;
-}
-@media screen and (max-width: 992px) {
-  .album .albums:nth-child(even) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    width: 85%;
-    margin-bottom: 10%;
-  }
-  .album .albums:nth-child(even) img {
-    border-radius: 50%;
-    order: 2;
-    width: 250px;
-    height: auto;
-  }
-  .album .albums:nth-child(even) .info-album {
-    margin-right: 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .album .albums:nth-child(even) .info-album hr {
-    background-color: black;
-  }
-  .album .albums:nth-child(even) .info-album p {
-    text-align: center;
-    font-size: 1em;
-  }
-  .album .albums:nth-child(odd) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 85%;
-    margin-bottom: 10%;
-  }
-  .album .albums:nth-child(odd) img {
-    border-radius: 50%;
-    width: 250px;
-    height: auto;
-  }
-  .album .albums:nth-child(odd) .info-album {
-    margin-left: 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .album .albums:nth-child(odd) .info-album hr {
-    background-color: black;
-  }
-  .album .albums:nth-child(odd) .info-album p {
-    text-align: center;
-    font-size: 1em;
-  }
-}
-
-.about main {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
+.past-events h1 {
   text-align: center;
 }
-.about main * {
-  margin: 2%;
+.past-events .past-events-parallax-text {
+  background-color: #bcb4bc;
 }
-.about main section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.about main .about-who {
-  text-align: center;
-}
-.about main img {
-  border-radius: 50%;
-}
-.about main #about-header {
-  flex-direction: column;
-}
-.about .about-parallax-1 {
+.past-events .past-events-parallax-1 {
   /* The image used */
-  background-image: url("/img/parallax-1.jpg");
-  height: 500px;
+  background-image: url("/img/pukkelpop-mobile.jpg");
+  height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about .about-parallax-2 {
+.past-events .past-events-parallax-2 {
   /* The image used */
-  background-image: url("/img/parallax-2.jpg");
-  height: 500px;
+  background-image: url("/img/AB-mei-2019.jpg");
+  height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about .about-parallax-3 {
+.past-events .past-events-parallax-3 {
   /* The image used */
-  background-image: url("/img/parallax-3.jpg");
-  height: 500px;
+  background-image: url("/img/werchter.jpg");
+  height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -535,14 +509,16 @@ footer a:hover {
   background-size: cover;
 }
 
-@media screen and (max-width: 992px) {
-  .about main section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen and (min-width: 768px) {
+  .past-events .past-events-parallax-text p {
+    display: block;
   }
-  .about main #about-wiebe {
-    flex-direction: column-reverse;
+  .past-events .past-events-parallax-text button {
+    display: none;
+  }
+  .past-events .past-events-parallax-1 {
+    /* The image used */
+    background-image: url("../img/pukkelpop.jpg");
   }
 }
 

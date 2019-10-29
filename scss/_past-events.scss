@@ -1,4 +1,4 @@
-@mixin past-events-parallax-effect {
+@mixin parallax-effect {
     /* Create the parallax scrolling effect */
     background: {
       attachment: fixed;
@@ -8,8 +8,8 @@
     }
   }
   
+ @mixin past-event {
   .past-events {
-    background-color: $silver;
   
     h1 {
       text-align: center;
@@ -21,26 +21,26 @@
   
     .past-events-parallax-1 {
       /* The image used */
-      background-image: url("../img/pukkelpop-mobile.jpg");
+      background-image: url("/img/pukkelpop-mobile.jpg");
       height: 400px;
   
-      @include past-events-parallax-effect;
+      @include parallax-effect;
     }
   
     .past-events-parallax-2 {
       /* The image used */
-      background-image: url("../img/AB-mei-2019.jpg");
+      background-image: url("/img/AB-mei-2019.jpg");
       height: 400px;
   
-      @include past-events-parallax-effect;
+      @include parallax-effect;
     }
   
     .past-events-parallax-3 {
       /* The image used */
-      background-image: url("../img/werchter.jpg");
+      background-image: url("/img/werchter.jpg");
       height: 400px;
   
-      @include past-events-parallax-effect;
+      @include parallax-effect;
     }
   }
   
@@ -60,3 +60,5 @@
           }
       }
     }
+
+ }
