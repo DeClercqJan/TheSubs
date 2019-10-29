@@ -8,15 +8,9 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-<<<<<<< HEAD
-=======
-
 .past-events h2 {
-  -webkit-animation: animate 0.7s ease-in-out infinite;
-          animation: animate 0.7s ease-in-out infinite;
+  animation: animate 0.7s ease-in-out infinite;
 }
-
->>>>>>> 799d0451730be731cdc5ca67b6f80bb627f190b9
 .past-events .past-events-parallax-text {
   border: 1px solid red;
   background-color: #bcb4bc;
@@ -77,18 +71,8 @@
   }
   .about main section {
     display: flex;
-<<<<<<< HEAD
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
-=======
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
->>>>>>> 799d0451730be731cdc5ca67b6f80bb627f190b9
     padding: 20px;
   }
   .about main section about-text {
@@ -406,12 +390,7 @@ footer a:hover {
   grid-column-start: 2;
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
 #title h1 {
-=======
-
-#title h1, #title h2 {
->>>>>>> 799d0451730be731cdc5ca67b6f80bb627f190b9
   margin-top: 20px;
   animation: animate 1s ease-in-out infinite;
 }
@@ -448,6 +427,9 @@ footer a:hover {
 .album .albums:nth-child(even) .info-album hr {
   background-color: black;
   width: 90%;
+}
+.album .albums:nth-child(even) .info-album h2 {
+  animation: animate 0.7s ease-in-out infinite;
 }
 .album .albums:nth-child(even) .info-album p {
   text-align: center;
