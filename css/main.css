@@ -1,3 +1,16 @@
+.contact main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+.contact main form {
+  width: 600px;
+}
+.contact main iframe {
+  width: 600px;
+}
+
 .past-events {
   background-color: #bcb4bc;
   display: grid;
@@ -13,7 +26,7 @@
   background-color: #bcb4bc;
   text-align: center;
   padding-top: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .past-events .past-events-parallax-1 {
   /* The image used */
