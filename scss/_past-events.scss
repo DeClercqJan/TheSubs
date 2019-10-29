@@ -8,11 +8,10 @@
   }
 }
 
-
-
 .past-events {
   background-color: $silver;
   display: grid;
+
   h1 {
     text-align: center;
     animation: animate 0.7s ease-in-out infinite;
@@ -24,7 +23,6 @@
   }
 
   .past-events-parallax-text {
-    border: 1px solid red;
     background-color: $silver;
     text-align: center;
     padding-top: 2rem ;
@@ -33,7 +31,7 @@
 
   .past-events-parallax-1 {
     /* The image used */
-    background-image: url("/TheSubs/img/pukkelpop-mobile.jpg");
+    background-image: url("/TheSubs/img/pukkelpop-mobile.webp");
     height: 400px;
 
     @include past-events-parallax-effect;
@@ -41,7 +39,7 @@
 
   .past-events-parallax-2 {
     /* The image used */
-    background-image: url("/TheSubs/img/AB-mei-2019.jpg");
+    background-image: url("/TheSubs/img/AB-mei-2019.webp");
     height: 400px;
 
     @include past-events-parallax-effect;
@@ -49,15 +47,11 @@
 
   .past-events-parallax-3 {
     /* The image used */
-    background-image: url("/TheSubs/img/werchter.jpg");
+    background-image: url("/TheSubs/img/werchter.webp");
     height: 400px;
 
     @include past-events-parallax-effect;
   }
-}
-
-.past-events-grid {
-  display: grid;
 }
 
 @media screen and (min-width: 768px) {
@@ -72,7 +66,7 @@
     }
       .past-events-parallax-1 {
         /* The image used */
-        background-image: url("/TheSubs/img/pukkelpop.jpg");
+        background-image: url("/TheSubs/img/pukkelpop.webp");
         }
     }
   }
