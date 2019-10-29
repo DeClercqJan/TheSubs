@@ -10,9 +10,10 @@
   
   .past-events {
     background-color: $silver;
-  
+    
     h1 {
       text-align: center;
+      animation: animate 0.7s ease-in-out infinite;
     }
   
     .past-events-parallax-text {
@@ -44,6 +45,10 @@
     }
   }
   
+  .past-events-grid {
+    display: grid;
+  }
+
   @media screen and (min-width: 768px) {
     .past-events {
       .past-events-parallax-text {
