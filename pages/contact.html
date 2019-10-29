@@ -43,18 +43,22 @@
 <div class="contact">
     <main>
 
-        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/shadia.nasman1988@gmail.com" method="post">
-            <fieldset id="fs-frm-inputs">
-              <label for="full-name">Full Name</label> <br>
-              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-              <label for="email-address">Email Address</label><br>
-              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-              <label for="message">Message</label><br>
-              <textarea rows="10"  name="message" id="message" placeholder="write here the message" required=""></textarea>
-              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        <form class="contact-form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/shadia.nasman1988@gmail.com" method="post">
+            <fieldset class="contact-fieldset" id="fs-frm-inputs">
+              <div><label for="full-name">Full Name</label> </div>
+             <div> <input type="text" name="name" id="full-name" placeholder="First and Last" required=""></div>
+              <div><label for="email-address">Email Address</label></div>
+              <div><input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""></div>
+              <div><label for="message">Message</label></div>
+            <div><textarea rows="10"  name="message" id="message" placeholder="write here the message" required=""></textarea></div>
+              <div><input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"></div>
+              <div><input id="contact-submit" type="submit" value="send"></div>
+            
+            <div class="contact-iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.874308222259!2d3.712269019764133!3d51.03694215291219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c373df8647eb21%3A0xa226f4f86b180d73!2sGent%20Sint-Pietersstation!5e0!3m2!1sar!2sbe!4v1572340178205!5m2!1sar!2sbe"  ></iframe></div>
             </fieldset>
-            <input id="contact-submit" type="submit" value="send"><!-- the messege appears inside the recieved email-->
-          </form>
+        </form>
+            
+           
 
     </main>
 </div>

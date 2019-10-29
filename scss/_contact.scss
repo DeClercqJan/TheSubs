@@ -1,28 +1,70 @@
 @mixin contact {
     .contact {
-      background-color: rgb(52, 25, 126);
-      
-      *{
-        padding: 5%;
-        
-      }  
-      display: flex;
      
-       justify-content: center; 
-      input:hover{
+      main{
+        
+      
+        .contact-iframe{
+         display: flex;
+         width: 100%;
+        }
+      
+      input:hover {
         font-weight: bold;
         text-decoration: none;
         color: $magenta;
         }
 
-      form{
-        fieldset{
-          display: flex;
+      .contact-form{
+        
+       
+       
+        display: flex;
+         
+         justify-content: center;
+         .contact-fieldset{
           
-      }
+          display: flex;
+          justify-content: center;
+          width: 50%;
+          background-color: violet;
+         
+          text-align: center;
+          padding: 5%;
+          *{
+           
+            padding: 2%;
+            width: 50%;
+            
+           
+          }
+          label{
+            animation: animate 0.7s ease-in-out infinite;
+            
+          }
+          input{
+            width:100%;
+          }
+          textarea{
+            width: 100%;
+          }
+          
+          }
+          
+          }
+          
+     
       }
     }
+   
+  /*  @media screen and (max-width: 992px) {
+      .contact {
+        main {
+          
+        }
   }
+}
+    */
 
+    }
   
-      

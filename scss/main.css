@@ -666,6 +666,11 @@ footer a:hover {
   text-align: center;
 }
 
+.about main h1 {
+  -webkit-animation: animate 0.7s ease-in-out infinite;
+          animation: animate 0.7s ease-in-out infinite;
+}
+
 .about main * {
   margin: 2%;
 }
@@ -752,8 +757,20 @@ footer a:hover {
   }
 }
 
-.contact {
-  background-color: #34197e;
+.contact main .contact-iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.contact main input:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f70deb;
+}
+
+.contact main .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,19 +779,43 @@ footer a:hover {
           justify-content: center;
 }
 
-.contact * {
-  padding: 5%;
-}
-
-.contact input:hover {
-  font-weight: bold;
-  text-decoration: none;
-  color: #f70deb;
-}
-
-.contact form fieldset {
+.contact main .contact-form .contact-fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  background-color: violet;
+  text-align: center;
+  padding: 5%;
 }
+
+.contact main .contact-form .contact-fieldset * {
+  padding: 2%;
+  width: 50%;
+}
+
+.contact main .contact-form .contact-fieldset label {
+  -webkit-animation: animate 0.7s ease-in-out infinite;
+          animation: animate 0.7s ease-in-out infinite;
+}
+
+.contact main .contact-form .contact-fieldset input {
+  width: 100%;
+}
+
+.contact main .contact-form .contact-fieldset textarea {
+  width: 100%;
+}
+
+/*  @media screen and (max-width: 992px) {
+      .contact {
+        main {
+          
+        }
+  }
+}
+    */
 /*# sourceMappingURL=main.css.map */
