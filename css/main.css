@@ -1,3 +1,16 @@
+.contact main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+.contact main form {
+  width: 600px;
+}
+.contact main iframe {
+  width: 600px;
+}
+
 .past-events {
   background-color: #bcb4bc;
   display: grid;
