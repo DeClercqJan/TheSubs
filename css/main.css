@@ -729,7 +729,7 @@ footer a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
 }
 
