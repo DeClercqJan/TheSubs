@@ -6,10 +6,13 @@ This is the upgraded version of the website of the Belgian band The Subs.
 
 It is designed by:
 
-    1. Jeroen: Git God/ Albums Page 
-    2. Tibo: Main Page/ Readme
-    3. Jan: Past Events Page
-    4. Shadia: About Us/ Contact Us
+    1 Jeroen: Git God/ Albums Page 
+
+    2 Tibo: Main Page/ Readme
+
+    3 Jan: Past Events Page
+
+    4 Shadia: About Us/ Contact Us
 
 ## Contents
 
