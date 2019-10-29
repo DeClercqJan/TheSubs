@@ -9,12 +9,15 @@
   padding-bottom: 2rem;
 }
 .past-events .past-events-parallax-text {
+  border: 1px solid red;
   background-color: #bcb4bc;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .past-events .past-events-parallax-1 {
   /* The image used */
-  background-image: url("../img/pukkelpop-mobile.jpg");
+  background-image: url("/TheSubs/img/pukkelpop-mobile.jpg");
   height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -24,7 +27,7 @@
 }
 .past-events .past-events-parallax-2 {
   /* The image used */
-  background-image: url("../img/AB-mei-2019.jpg");
+  background-image: url("/TheSubs/img/AB-mei-2019.jpg");
   height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -34,7 +37,7 @@
 }
 .past-events .past-events-parallax-3 {
   /* The image used */
-  background-image: url("../img/werchter.jpg");
+  background-image: url("/TheSubs/img/werchter.jpg");
   height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -56,7 +59,7 @@
   }
   .past-events .past-events-parallax-1 {
     /* The image used */
-    background-image: url("../img/pukkelpop.jpg");
+    background-image: url("/TheSubs/img/pukkelpop.jpg");
   }
 }
 * {
@@ -515,7 +518,7 @@ footer a:hover {
 }
 .about .about-parallax-1 {
   /* The image used */
-  background-image: url("/img/parallax-1.jpg");
+  background-image: url("/TheSubs/img/parallax-1.jpg");
   height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -525,7 +528,7 @@ footer a:hover {
 }
 .about .about-parallax-2 {
   /* The image used */
-  background-image: url("/img/parallax-2.jpg");
+  background-image: url("/TheSubs/img/parallax-2.jpg");
   height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -535,7 +538,7 @@ footer a:hover {
 }
 .about .about-parallax-3 {
   /* The image used */
-  background-image: url("/img/parallax-3.jpg");
+  background-image: url("/TheSubs/img/parallax-3.jpg");
   height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
