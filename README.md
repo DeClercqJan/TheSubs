@@ -3,12 +3,11 @@
 ## About the page
 
 This is the upgraded version of the website of the Belgian band The Subs
-It is designed by 
+It is designed by
     1 Jeroen
     2 Tibo
     3 Jan
     4 Shadia
----
 
 ## Contents
 
