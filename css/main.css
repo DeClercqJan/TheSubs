@@ -91,6 +91,12 @@
   .about main img {
     margin-top: 5%;
   }
+  .about main #about-wiebe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 * {
@@ -725,6 +731,13 @@ footer a:hover {
           justify-content: center;
   padding: 30px;
   text-align: center;
+}
+
+.about main #about-wiebe {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .about .about-who {

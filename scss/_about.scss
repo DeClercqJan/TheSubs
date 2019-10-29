@@ -23,6 +23,9 @@
         padding: 30px;
         text-align: center;
       }
+      #about-wiebe {
+        flex-direction: row-reverse;
+      }
     }
     .about-who {
       text-align: center;
@@ -72,6 +75,9 @@
       }
       img{
         margin-top:5% ;
+      }
+      #about-wiebe {
+        flex-direction: column-reverse;
       }
     }
   }
