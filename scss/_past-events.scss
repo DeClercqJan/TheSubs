@@ -8,11 +8,10 @@
   }
 }
 
-
-
 .past-events {
   background-color: $silver;
   display: grid;
+
   h1 {
     text-align: center;
     animation: animate 0.7s ease-in-out infinite;
@@ -21,7 +20,6 @@
   }
 
   .past-events-parallax-text {
-    border: 1px solid red;
     background-color: $silver;
     text-align: center;
     padding-top: 2rem ;
@@ -51,10 +49,6 @@
 
     @include past-events-parallax-effect;
   }
-}
-
-.past-events-grid {
-  display: grid;
 }
 
 @media screen and (min-width: 768px) {
