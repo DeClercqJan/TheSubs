@@ -733,13 +733,6 @@ footer a:hover {
   text-align: center;
 }
 
-.about main #about-wiebe {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
 .about .about-who {
   text-align: center;
 }
