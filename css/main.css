@@ -1,16 +1,3 @@
-.contact main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-}
-.contact main form {
-  width: 600px;
-}
-.contact main iframe {
-  width: 600px;
-}
-
 .past-events {
   background-color: #bcb4bc;
   display: grid;
@@ -25,7 +12,6 @@
   animation: animate 0.7s ease-in-out infinite;
 }
 .past-events .past-events-parallax-text {
-  border: 1px solid red;
   background-color: #bcb4bc;
   text-align: center;
   padding-top: 2rem;
@@ -60,10 +46,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.past-events-grid {
-  display: grid;
 }
 
 @media screen and (min-width: 768px) {
@@ -442,7 +424,7 @@ footer a:hover {
   width: 90%;
 }
 .album .albums:nth-child(even) .info-album h2 {
-  animation: animate 0.7s ease-in-out infinite;
+  animation: animate 1s ease-in-out infinite;
 }
 .album .albums:nth-child(even) .info-album p {
   text-align: center;
@@ -465,6 +447,9 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.album .albums:nth-child(odd) .info-album h2 {
+  animation: animate 1s ease-in-out infinite;
 }
 .album .albums:nth-child(odd) .info-album hr {
   background-color: black;
